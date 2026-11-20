@@ -1,0 +1,1449 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>r星每日必吃大瓜今日大赛 - 热点影像,娱乐社区品牌官网</title>
+<meta name="description" content="r星每日必吃大瓜今日大赛官方网站，聚焦每日热点影像与娱乐话题的原创视频社区，为企业与创作者搭建高品质内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2314121a'/%3E%3Ccircle cx='32' cy='32' r='17' fill='none' stroke='%23ff3b6b' stroke-width='5'/%3E%3Cpath d='M27 23l16 9-16 9z' fill='%23ffd23f'/%3E%3C/svg%3E">
+<style>
+:root{
+  --rx-bg:#14121a;
+  --rx-bg2:#1d1a26;
+  --rx-card:#221e2d;
+  --rx-line:rgba(255,255,255,.09);
+  --rx-txt:#efeaf6;
+  --rx-mut:#a49cb6;
+  --rx-pink:#ff3b6b;
+  --rx-yellow:#ffd23f;
+  --rx-cyan:#4de2d4;
+  --rx-radius:16px;
+  --rx-head:104px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--rx-head)}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  background:var(--rx-bg);color:var(--rx-txt);line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul{list-style:none}
+.rx-wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.rx-sticky{position:sticky;top:0;z-index:60}
+/* ============ 公告条 ============ */
+.rx-notice{
+  background:linear-gradient(90deg,var(--rx-pink),#a428d8 60%,#3846ff);
+  color:#fff;font-size:13px;
+}
+.rx-notice__inner{
+  max-width:1200px;margin:0 auto;padding:8px 24px;
+  display:flex;align-items:center;gap:12px;overflow:hidden;
+}
+.rx-notice__tag{
+  flex:none;background:rgba(0,0,0,.28);padding:1px 9px;border-radius:20px;
+  font-size:11px;letter-spacing:.08em;font-weight:700;
+}
+.rx-notice__track{
+  position:relative;flex:1;height:22px;overflow:hidden;
+}
+.rx-notice__item{
+  position:absolute;inset:0;display:flex;align-items:center;
+  opacity:0;transform:translateY(100%);transition:.55s ease;white-space:nowrap;
+}
+.rx-notice__item.is-on{opacity:1;transform:none}
+.rx-notice__item b{color:var(--rx-yellow);margin-right:6px;font-weight:700}
+.rx-notice__dots{display:flex;gap:5px;flex:none}
+.rx-notice__dots i{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.4);transition:.3s}
+.rx-notice__dots i.is-on{background:#fff;width:16px;border-radius:4px}
+/* ============ 页头 ============ */
+.rx-header{background:rgba(20,18,26,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--rx-line)}
+.rx-header__inner{
+  max-width:1200px;margin:0 auto;padding:0 24px;height:64px;
+  display:flex;align-items:center;gap:26px;
+}
+.rx-logo{display:flex;align-items:center;gap:10px;flex:none}
+.rx-logo__mark{
+  width:36px;height:36px;border-radius:11px;flex:none;
+  background:conic-gradient(from 210deg,var(--rx-pink),#8a2be2,var(--rx-cyan),var(--rx-pink));
+  display:grid;place-items:center;
+}
+.rx-logo__mark span{width:14px;height:14px;background:var(--rx-bg);border-radius:3px;clip-path:polygon(0 0,100% 50%,0 100%)}
+.rx-logo__txt{font-size:16px;font-weight:800;letter-spacing:.02em;line-height:1.15}
+.rx-logo__txt small{display:block;font-size:10px;font-weight:500;color:var(--rx-mut);letter-spacing:.22em}
+.rx-nav{display:flex;gap:4px;flex:1;flex-wrap:wrap}
+.rx-nav a{
+  font-size:14px;color:var(--rx-mut);padding:8px 12px;border-radius:10px;transition:.22s;
+}
+.rx-nav a:hover,.rx-nav a.is-active{color:#fff;background:rgba(255,59,107,.14)}
+.rx-header__tools{display:flex;align-items:center;gap:10px;flex:none}
+.rx-search{display:flex;align-items:center;background:var(--rx-bg2);border:1px solid var(--rx-line);border-radius:22px;padding:5px 6px 5px 14px;gap:6px;transition:.25s}
+.rx-search:focus-within{border-color:var(--rx-pink);box-shadow:0 0 0 3px rgba(255,59,107,.16)}
+.rx-search input{
+  width:130px;background:none;border:none;outline:none;color:var(--rx-txt);font-size:13px;
+}
+.rx-search input::placeholder{color:#6f6881}
+.rx-search button{
+  background:var(--rx-pink);color:#fff;border-radius:16px;padding:4px 12px;font-size:12px;font-weight:700;transition:.2s;
+}
+.rx-search button:hover{background:#ff5a83}
+.rx-btn{
+  display:inline-flex;align-items:center;gap:7px;border-radius:22px;
+  padding:9px 20px;font-size:14px;font-weight:700;transition:.22s;
+}
+.rx-btn--main{background:var(--rx-pink);color:#fff}
+.rx-btn--main:hover{transform:translateY(-2px);box-shadow:0 10px 24px -8px var(--rx-pink)}
+.rx-btn--ghost{border:1px solid var(--rx-line);color:var(--rx-txt)}
+.rx-btn--ghost:hover{border-color:var(--rx-cyan);color:var(--rx-cyan)}
+.rx-burger{display:none;width:38px;height:38px;border-radius:10px;border:1px solid var(--rx-line);place-items:center}
+.rx-burger i{display:block;width:16px;height:2px;background:var(--rx-txt);position:relative}
+.rx-burger i::before,.rx-burger i::after{content:"";position:absolute;left:0;width:16px;height:2px;background:var(--rx-txt);transition:.25s}
+.rx-burger i::before{top:-5px}
+.rx-burger i::after{top:5px}
+.rx-burger.is-open i{background:transparent}
+.rx-burger.is-open i::before{top:0;transform:rotate(45deg)}
+.rx-burger.is-open i::after{top:0;transform:rotate(-45deg)}
+/* ============ 通用块 ============ */
+.rx-sec{padding:76px 0}
+.rx-sec--tight{padding:52px 0}
+.rx-sec__head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:34px;flex-wrap:wrap}
+.rx-kicker{
+  display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:800;
+  letter-spacing:.18em;color:var(--rx-cyan);text-transform:uppercase;margin-bottom:10px;
+}
+.rx-kicker::before{content:"";width:22px;height:2px;background:var(--rx-cyan)}
+.rx-h2{font-size:clamp(22px,3vw,32px);font-weight:800;letter-spacing:.01em;line-height:1.3}
+.rx-h2 em{font-style:normal;color:var(--rx-pink)}
+.rx-sub{color:var(--rx-mut);font-size:14px;max-width:560px;margin-top:8px}
+.rx-more{color:var(--rx-mut);font-size:13px;border-bottom:1px dashed rgba(255,255,255,.3);padding-bottom:2px;transition:.2s}
+.rx-more:hover{color:var(--rx-pink);border-color:var(--rx-pink)}
+/* ============ 首屏 ============ */
+.rx-hero{position:relative;overflow:hidden;padding:64px 0 70px;background:
+  radial-gradient(720px 380px at 88% -8%,rgba(255,59,107,.24),transparent 62%),
+  radial-gradient(600px 320px at 4% 96%,rgba(77,226,212,.14),transparent 60%),
+  var(--rx-bg);
+}
+.rx-hero__grid{display:grid;grid-template-columns:1.08fr .92fr;gap:52px;align-items:center}
+.rx-hero__badges{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.rx-chip{
+  font-size:12px;padding:4px 12px;border-radius:20px;border:1px solid var(--rx-line);color:var(--rx-mut);background:rgba(255,255,255,.03);
+}
+.rx-chip--hot{background:rgba(255,59,107,.14);border-color:rgba(255,59,107,.4);color:#ff90aa;font-weight:700}
+.rx-h1{
+  font-size:clamp(32px,4.6vw,54px);font-weight:900;line-height:1.16;letter-spacing:-.01em;margin-bottom:18px;
+}
+.rx-h1 span{
+  background:linear-gradient(100deg,var(--rx-yellow),var(--rx-pink) 55%,#b46bff);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.rx-hero__lead{font-size:15px;color:#cdc5dd;max-width:520px;margin-bottom:26px}
+.rx-hero__cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:32px}
+.rx-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:460px}
+.rx-stat{background:rgba(255,255,255,.035);border:1px solid var(--rx-line);border-radius:12px;padding:12px 14px}
+.rx-stat b{display:block;font-size:21px;font-weight:900;color:var(--rx-yellow);letter-spacing:.01em}
+.rx-stat span{font-size:12px;color:var(--rx-mut)}
+.rx-hero__visual{position:relative}
+.rx-hero__cover{
+  border-radius:22px;overflow:hidden;border:1px solid rgba(255,255,255,.12);
+  box-shadow:0 30px 70px -30px rgba(255,59,107,.5);
+  position:relative;
+}
+.rx-hero__cover img{width:100%;height:auto;aspect-ratio:16/11;object-fit:cover}
+.rx-hero__play{
+  position:absolute;inset:0;display:grid;place-items:center;pointer-events:none;
+}
+.rx-hero__play span{
+  width:64px;height:64px;border-radius:50%;background:rgba(20,18,26,.55);backdrop-filter:blur(4px);
+  border:2px solid #fff;display:grid;place-items:center;
+}
+.rx-hero__play span::after{
+  content:"";width:0;height:0;border-left:18px solid #fff;border-top:11px solid transparent;border-bottom:11px solid transparent;margin-left:4px;
+}
+.rx-hero__float{
+  position:absolute;left:-18px;bottom:-18px;background:var(--rx-card);
+  border:1px solid var(--rx-line);border-radius:14px;padding:12px 16px;
+  display:flex;gap:12px;align-items:center;box-shadow:0 18px 40px -18px #000;
+}
+.rx-hero__float b{font-size:13px}
+.rx-hero__float small{display:block;color:var(--rx-mut);font-size:11px}
+.rx-live-dot{width:8px;height:8px;border-radius:50%;background:var(--rx-pink);box-shadow:0 0 0 4px rgba(255,59,107,.2);animation:rxPulse 1.6s infinite}
+@keyframes rxPulse{50%{box-shadow:0 0 0 9px rgba(255,59,107,0)}}
+/* ============ 介绍/解析 ============ */
+.rx-about{background:var(--rx-bg2);border-top:1px solid var(--rx-line);border-bottom:1px solid var(--rx-line)}
+.rx-about__grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:52px}
+.rx-about__side{position:sticky;top:130px;align-self:start}
+.rx-about__kpis{display:grid;gap:12px;margin-top:26px}
+.rx-about__kpis div{border-left:3px solid var(--rx-pink);padding:4px 0 4px 14px}
+.rx-about__kpis b{display:block;font-size:15px}
+.rx-about__kpis span{font-size:12.5px;color:var(--rx-mut)}
+.rx-prose p{color:#c4bcd4;font-size:14.5px;margin-bottom:16px;text-align:justify}
+.rx-prose h3{font-size:18px;font-weight:800;margin:26px 0 10px;padding-left:12px;border-left:4px solid var(--rx-cyan);line-height:1.4}
+.rx-prose strong{color:var(--rx-yellow);font-weight:700}
+.rx-prose .rx-quote{
+  background:rgba(255,59,107,.08);border:1px solid rgba(255,59,107,.22);border-radius:12px;
+  padding:14px 18px;color:#ffb3c4;font-size:14px;margin:20px 0;
+}
+/* ============ 榜单条 ============ */
+.rx-rank{background:var(--rx-bg2);border-radius:var(--rx-radius);border:1px solid var(--rx-line);padding:18px 22px;display:flex;gap:26px;flex-wrap:wrap;align-items:center;margin-top:-34px;position:relative;z-index:6;box-shadow:0 20px 50px -30px #000}
+.rx-rank__title{font-size:13px;font-weight:800;color:var(--rx-yellow);flex:none;display:flex;align-items:center;gap:8px}
+.rx-rank__list{display:flex;gap:10px;flex-wrap:wrap;flex:1}
+.rx-rank__list a{font-size:13px;color:#cbc3da;padding:3px 10px;border-radius:8px;background:rgba(255,255,255,.04);transition:.2s;white-space:nowrap}
+.rx-rank__list a:hover{background:rgba(255,59,107,.18);color:#fff}
+.rx-rank__list a b{color:var(--rx-pink);margin-right:5px;font-weight:800}
+/* ============ 视频卡片 ============ */
+.rx-grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.rx-card{
+  background:var(--rx-card);border:1px solid var(--rx-line);border-radius:var(--rx-radius);
+  overflow:hidden;display:flex;flex-direction:column;transition:.28s;
+}
+.rx-card:hover{transform:translateY(-6px);border-color:rgba(255,59,107,.5);box-shadow:0 24px 46px -26px rgba(255,59,107,.7)}
+.rx-thumb{position:relative;overflow:hidden;aspect-ratio:16/9;background:#000}
+.rx-thumb img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.rx-card:hover .rx-thumb img{transform:scale(1.06)}
+.rx-thumb__play{
+  position:absolute;inset:0;display:grid;place-items:center;opacity:0;transition:.3s;background:linear-gradient(0deg,rgba(0,0,0,.5),transparent 60%);
+}
+.rx-card:hover .rx-thumb__play{opacity:1}
+.rx-thumb__play span{width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.92);display:grid;place-items:center}
+.rx-thumb__play span::after{content:"";width:0;height:0;border-left:13px solid #14121a;border-top:8px solid transparent;border-bottom:8px solid transparent;margin-left:3px}
+.rx-thumb__tag{
+  position:absolute;top:10px;left:10px;font-size:11px;font-weight:800;letter-spacing:.04em;
+  background:var(--rx-pink);color:#fff;padding:3px 9px;border-radius:6px;
+}
+.rx-thumb__time{
+  position:absolute;bottom:10px;right:10px;font-size:11px;background:rgba(0,0,0,.66);padding:2px 7px;border-radius:5px;color:#eee;
+}
+.rx-card__body{padding:16px 17px 17px;display:flex;flex-direction:column;gap:9px;flex:1}
+.rx-card__title{font-size:15.5px;font-weight:800;line-height:1.42}
+.rx-card__desc{font-size:12.6px;color:var(--rx-mut);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.rx-card__meta{display:flex;align-items:center;gap:8px;font-size:12px;color:#8d85a0;margin-top:auto}
+.rx-avatar{width:22px;height:22px;border-radius:50%;flex:none;display:grid;place-items:center;font-size:11px;font-weight:800;color:#14121a}
+.rx-card__acts{display:flex;gap:8px;padding-top:10px;border-top:1px dashed var(--rx-line);font-size:12px;color:var(--rx-mut)}
+.rx-act{display:flex;align-items:center;gap:5px;padding:3px 8px;border-radius:8px;transition:.2s}
+.rx-act:hover{background:rgba(255,255,255,.06);color:#fff}
+.rx-act.is-on{color:var(--rx-pink)}
+.rx-act.is-on svg{fill:var(--rx-pink)}
+.rx-act svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:1.8}
+/* 焦点大卡 */
+.rx-focus{display:grid;grid-template-columns:1.45fr 1fr;gap:24px}
+.rx-focus__big{position:relative;border-radius:20px;overflow:hidden;border:1px solid var(--rx-line);min-height:340px}
+.rx-focus__big img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.rx-focus__big::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,8,14,.92),rgba(10,8,14,.1) 60%)}
+.rx-focus__big .rx-focus__txt{position:absolute;inset:auto 0 0 0;padding:26px 28px;z-index:2}
+.rx-focus__big h3{font-size:22px;font-weight:900;margin-bottom:8px}
+.rx-focus__big p{font-size:13px;color:#c6bed6;max-width:480px;margin-bottom:12px}
+.rx-focus__list{display:grid;gap:14px;grid-auto-rows:1fr}
+.rx-mini{
+  display:flex;gap:13px;background:var(--rx-card);border:1px solid var(--rx-line);
+  border-radius:14px;padding:10px;transition:.24s;align-items:center;
+}
+.rx-mini:hover{border-color:rgba(77,226,212,.5);transform:translateX(4px)}
+.rx-mini img{width:104px;height:64px;object-fit:cover;border-radius:9px;flex:none}
+.rx-mini__t{font-size:13.5px;font-weight:700;line-height:1.4}
+.rx-mini__m{font-size:11.5px;color:var(--rx-mut);margin-top:4px}
+/* ============ 专题 ============ */
+.rx-topics{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.rx-topic{
+  position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--rx-line);
+  min-height:210px;display:flex;flex-direction:column;justify-content:flex-end;padding:18px;
+  transition:.28s;
+}
+.rx-topic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;transition:.6s}
+.rx-topic::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,8,14,.94),rgba(10,8,14,.16) 70%);z-index:1}
+.rx-topic:hover img{transform:scale(1.08)}
+.rx-topic>*{position:relative;z-index:2}
+.rx-topic__st{font-size:11px;font-weight:800;color:var(--rx-cyan);letter-spacing:.08em;margin-bottom:6px}
+.rx-topic h3{font-size:15.5px;font-weight:800;line-height:1.4;margin-bottom:5px}
+.rx-topic p{font-size:11.8px;color:#b1a9c2;line-height:1.55}
+/* ============ 创作者 ============ */
+.rx-creators{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.rx-creator{
+  background:var(--rx-card);border:1px solid var(--rx-line);border-radius:16px;padding:20px 18px;
+  text-align:center;transition:.26s;position:relative;overflow:hidden;
+}
+.rx-creator::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:linear-gradient(90deg,var(--rx-pink),var(--rx-cyan))}
+.rx-creator:hover{transform:translateY(-5px);border-color:rgba(255,210,63,.5)}
+.rx-creator__av{
+  width:64px;height:64px;border-radius:20px;margin:4px auto 12px;display:grid;place-items:center;
+  font-size:23px;font-weight:900;color:#14121a;position:relative;
+}
+.rx-creator h3{font-size:15px;font-weight:800}
+.rx-creator__tag{font-size:11.5px;color:var(--rx-cyan);margin:3px 0 8px;font-weight:700}
+.rx-creator p{font-size:12px;color:var(--rx-mut);line-height:1.6;min-height:56px}
+.rx-creator__nums{display:flex;justify-content:center;gap:16px;font-size:11.5px;color:#8d85a0;border-top:1px dashed var(--rx-line);padding-top:10px;margin-top:10px}
+.rx-creator__nums b{color:var(--rx-txt);display:block;font-size:13px}
+/* ============ 故事 ============ */
+.rx-stories{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.rx-story{background:linear-gradient(160deg,rgba(255,59,107,.09),rgba(77,226,212,.05));border:1px solid var(--rx-line);border-radius:16px;padding:24px 22px}
+.rx-story__q{font-size:30px;color:var(--rx-pink);line-height:1;font-weight:900;font-family:Georgia,serif}
+.rx-story h3{font-size:15.5px;font-weight:800;margin:6px 0 10px}
+.rx-story p{font-size:13px;color:#bdb5cd;text-align:justify}
+.rx-story__by{font-size:11.5px;color:var(--rx-mut);margin-top:14px;border-top:1px dashed var(--rx-line);padding-top:10px}
+/* ============ 影像墙 ============ */
+.rx-wall{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:110px;gap:12px}
+.rx-wall figure{position:relative;border-radius:12px;overflow:hidden;border:1px solid var(--rx-line)}
+.rx-wall img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.rx-wall figure:hover img{transform:scale(1.07)}
+.rx-wall figcaption{
+  position:absolute;inset:auto 0 0 0;padding:20px 10px 8px;font-size:11.5px;font-weight:700;
+  background:linear-gradient(0deg,rgba(8,6,12,.9),transparent);
+}
+.rx-wall .w2{grid-column:span 2}
+.rx-wall .h2{grid-row:span 2}
+/* ============ 评价 ============ */
+.rx-reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.rx-review{background:var(--rx-card);border:1px solid var(--rx-line);border-radius:14px;padding:18px;position:relative}
+.rx-review::after{content:"";position:absolute;left:26px;bottom:-8px;width:14px;height:14px;background:var(--rx-card);border-right:1px solid var(--rx-line);border-bottom:1px solid var(--rx-line);transform:rotate(45deg)}
+.rx-review__stars{color:var(--rx-yellow);font-size:12px;letter-spacing:2px;margin-bottom:8px}
+.rx-review p{font-size:13px;color:#c3bbd3;line-height:1.68}
+.rx-review__user{display:flex;align-items:center;gap:9px;margin-top:14px}
+.rx-review__user b{font-size:12.5px}
+.rx-review__user small{display:block;font-size:11px;color:var(--rx-mut)}
+/* ============ 灵感/工具 ============ */
+.rx-ideas{display:grid;grid-template-columns:1.1fr .9fr;gap:24px}
+.rx-panel{background:var(--rx-bg2);border:1px solid var(--rx-line);border-radius:18px;padding:26px}
+.rx-panel h3{font-size:17px;font-weight:800;margin-bottom:6px}
+.rx-panel__sub{font-size:12.5px;color:var(--rx-mut);margin-bottom:18px}
+.rx-idea-item{display:flex;gap:12px;padding:12px 0;border-bottom:1px dashed var(--rx-line)}
+.rx-idea-item:last-child{border-bottom:none}
+.rx-idea-item b{flex:none;width:26px;height:26px;border-radius:8px;background:rgba(255,210,63,.14);color:var(--rx-yellow);display:grid;place-items:center;font-size:12px}
+.rx-idea-item p{font-size:13px;color:#c3bbd3}
+.rx-idea-item p span{display:block;color:var(--rx-mut);font-size:11.5px;margin-top:2px}
+.rx-tagcloud{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.rx-tagcloud button{font-size:12px;padding:5px 11px;border-radius:20px;border:1px solid var(--rx-line);color:#c9c1d9;transition:.2s}
+.rx-tagcloud button:hover,.rx-tagcloud button.is-on{background:var(--rx-cyan);color:#0f1a19;border-color:var(--rx-cyan);font-weight:700}
+/* ============ 动态 ============ */
+.rx-news{display:grid;gap:0;border-left:2px solid var(--rx-line);margin-left:8px}
+.rx-news__item{position:relative;padding:0 0 26px 26px}
+.rx-news__item::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--rx-bg);border:2px solid var(--rx-pink)}
+.rx-news__item:last-child{padding-bottom:0}
+.rx-news__date{font-size:11.5px;color:var(--rx-cyan);font-weight:800;letter-spacing:.06em}
+.rx-news__item h3{font-size:15px;font-weight:800;margin:4px 0 4px}
+.rx-news__item p{font-size:12.8px;color:var(--rx-mut)}
+/* ============ FAQ ============ */
+.rx-faq{max-width:860px;margin:0 auto}
+.rx-faq details{background:var(--rx-card);border:1px solid var(--rx-line);border-radius:12px;margin-bottom:12px;overflow:hidden;transition:.2s}
+.rx-faq details[open]{border-color:rgba(255,59,107,.45)}
+.rx-faq summary{
+  list-style:none;cursor:pointer;padding:15px 20px;font-size:14.5px;font-weight:700;
+  display:flex;justify-content:space-between;align-items:center;gap:14px;
+}
+.rx-faq summary::-webkit-details-marker{display:none}
+.rx-faq summary::after{content:"+";font-size:20px;color:var(--rx-pink);flex:none;line-height:1;transition:.25s}
+.rx-faq details[open] summary::after{transform:rotate(45deg)}
+.rx-faq .rx-faq__a{padding:0 20px 16px;font-size:13.2px;color:var(--rx-mut);line-height:1.75}
+/* ============ 联系 ============ */
+.rx-contact{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.rx-contact__box{background:var(--rx-card);border:1px solid var(--rx-line);border-radius:16px;padding:24px 20px;transition:.24s}
+.rx-contact__box:hover{border-color:var(--rx-cyan)}
+.rx-contact__box b{display:block;font-size:14.5px;margin-bottom:6px}
+.rx-contact__box p{font-size:12.5px;color:var(--rx-mut);margin-bottom:14px}
+.rx-contact__box code{font-size:12.5px;color:var(--rx-yellow);background:rgba(255,210,63,.08);padding:2px 8px;border-radius:6px;display:inline-block;font-family:inherit}
+/* ============ 页脚 ============ */
+.rx-footer{background:#0e0c14;border-top:1px solid var(--rx-line);padding:54px 0 26px;margin-top:20px}
+.rx-footer__grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:34px;margin-bottom:34px}
+.rx-footer h4{font-size:13.5px;font-weight:800;margin-bottom:14px;letter-spacing:.04em}
+.rx-footer li{margin-bottom:8px}
+.rx-footer li a{font-size:12.6px;color:var(--rx-mut);transition:.2s}
+.rx-footer li a:hover{color:var(--rx-pink)}
+.rx-footer__about p{font-size:12.6px;color:var(--rx-mut);max-width:320px;margin-top:10px;line-height:1.7}
+.rx-footer__bottom{
+  border-top:1px solid var(--rx-line);padding-top:20px;display:flex;justify-content:space-between;
+  gap:16px;flex-wrap:wrap;font-size:12px;color:#77708a;
+}
+/* ============ 浮动工具 ============ */
+.rx-toast{
+  position:fixed;left:50%;bottom:38px;transform:translate(-50%,24px);z-index:120;
+  background:rgba(30,25,40,.97);border:1px solid rgba(255,59,107,.5);color:#fff;
+  padding:10px 20px;border-radius:26px;font-size:13px;font-weight:700;
+  opacity:0;pointer-events:none;transition:.32s;box-shadow:0 16px 40px -14px #000;
+}
+.rx-toast.is-on{opacity:1;transform:translate(-50%,0)}
+.rx-top{
+  position:fixed;right:22px;bottom:26px;z-index:100;width:44px;height:44px;border-radius:14px;
+  background:var(--rx-pink);color:#fff;display:grid;place-items:center;font-size:17px;font-weight:900;
+  opacity:0;pointer-events:none;transition:.3s;box-shadow:0 12px 30px -10px rgba(255,59,107,.9);
+}
+.rx-top.is-on{opacity:1;pointer-events:auto}
+.rx-top:hover{transform:translateY(-3px)}
+/* ============ 弹窗 ============ */
+.rx-modal{
+  position:fixed;inset:0;z-index:150;display:grid;place-items:center;padding:22px;
+  background:rgba(8,6,12,.78);backdrop-filter:blur(4px);opacity:0;pointer-events:none;transition:.25s;
+}
+.rx-modal.is-on{opacity:1;pointer-events:auto}
+.rx-modal__box{
+  background:var(--rx-bg2);border:1px solid var(--rx-line);border-radius:18px;padding:26px 24px;
+  max-width:420px;width:100%;transform:translateY(14px);transition:.28s;
+}
+.rx-modal.is-on .rx-modal__box{transform:none}
+.rx-modal__box h3{font-size:17px;font-weight:800;margin-bottom:8px}
+.rx-modal__box p{font-size:13px;color:var(--rx-mut);margin-bottom:16px}
+.rx-modal__box textarea{
+  width:100%;min-height:92px;background:var(--rx-bg);border:1px solid var(--rx-line);
+  border-radius:10px;padding:11px 13px;color:var(--rx-txt);font-family:inherit;font-size:13px;
+  resize:vertical;outline:none;
+}
+.rx-modal__box textarea:focus{border-color:var(--rx-pink)}
+.rx-modal__acts{display:flex;gap:10px;justify-content:flex-end;margin-top:16px}
+/* ============ 响应式 ============ */
+@media (max-width:1080px){
+  .rx-topics,.rx-creators{grid-template-columns:repeat(2,1fr)}
+  .rx-hero__grid,.rx-about__grid,.rx-ideas{grid-template-columns:1fr;gap:36px}
+  .rx-about__side{position:static}
+  .rx-focus{grid-template-columns:1fr}
+  .rx-focus__big{min-height:300px}
+  .rx-grid3,.rx-stories,.rx-reviews{grid-template-columns:repeat(2,1fr)}
+  .rx-footer__grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:820px){
+  :root{--rx-head:98px}
+  .rx-nav{
+    position:absolute;left:0;right:0;top:100%;background:var(--rx-bg2);
+    border-bottom:1px solid var(--rx-line);flex-direction:column;padding:10px 20px 16px;
+    display:none;box-shadow:0 20px 30px -20px #000;
+  }
+  .rx-nav.is-open{display:flex}
+  .rx-nav a{padding:11px 12px;font-size:15px}
+  .rx-burger{display:grid}
+  .rx-header__inner{gap:14px}
+  .rx-search input{width:92px}
+  .rx-contact{grid-template-columns:1fr}
+  .rx-wall{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:560px){
+  .rx-sec{padding:54px 0}
+  .rx-grid3,.rx-stories,.rx-reviews,.rx-topics,.rx-creators{grid-template-columns:1fr}
+  .rx-rank{gap:12px}
+  .rx-hero__float{display:none}
+  .rx-search{display:none}
+  .rx-footer__grid{grid-template-columns:1fr}
+  .rx-notice__item{font-size:12px;white-space:normal;line-height:1.3}
+  .rx-notice__track{height:34px}
+  .rx-wall{grid-auto-rows:92px}
+  .rx-hero{padding:40px 0 54px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 公告条 + 页头 吸顶 -->
+<div class="rx-sticky">
+  <div class="rx-notice" aria-label="站点公告">
+    <div class="rx-notice__inner">
+      <span class="rx-notice__tag">今日大赛</span>
+      <div class="rx-notice__track" id="rxNoticeTrack">
+        <div class="rx-notice__item is-on"><b>新增</b>11月19日「今日大赛」第37期开榜：外卖圈年度反转事件影像合集上线</div>
+        <div class="rx-notice__item"><b>更新</b>创作者激励计划第二季开放报名，瓜籽投稿可参与月度投票评选</div>
+        <div class="rx-notice__item"><b>榜单</b>每日必吃大瓜热榜刷新：三段未公开花絮首次在企业动态栏目发布</div>
+        <div class="rx-notice__item"><b>活动</b>「吃瓜观察室」直播连麦专场 11月22日 20:00，报名通道已开启</div>
+      </div>
+      <div class="rx-notice__dots" id="rxNoticeDots" aria-hidden="true">
+        <i class="is-on"></i><i></i><i></i><i></i>
+      </div>
+    </div>
+  </div>
+
+  <header class="rx-header">
+    <div class="rx-header__inner">
+      <a class="rx-logo" href="#rxHome" aria-label="r星每日必吃大瓜今日大赛官网首页">
+        <span class="rx-logo__mark"><span></span></span>
+        <span class="rx-logo__txt">r星大瓜<small>DAILY MELON</small></span>
+      </a>
+      <nav class="rx-nav" id="rxNav">
+        <a href="#rxHome" class="is-active">首页</a>
+        <a href="#rxWatch">焦点影像</a>
+        <a href="#rxTopic">专题企划</a>
+        <a href="#rxCreator">创作者</a>
+        <a href="#rxStory">故事随笔</a>
+        <a href="#rxWall">影像墙</a>
+        <a href="#rxNews">企业动态</a>
+        <a href="#rxFaq">帮助</a>
+        <a href="#rxContact">联系</a>
+      </nav>
+      <div class="rx-header__tools">
+        <div class="rx-search" role="search">
+          <label for="rxSearchInput" class="rx-sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">搜索内容</label>
+          <input id="rxSearchInput" type="search" placeholder="搜瓜、搜人、搜专题" autocomplete="off">
+          <button type="button" id="rxSearchBtn">搜索</button>
+        </div>
+        <a class="rx-btn rx-btn--main" href="#rxContact">投稿入口</a>
+        <button class="rx-burger" id="rxBurger" aria-label="展开导航菜单" aria-expanded="false"><i></i></button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main>
+<!-- ============ 首屏 ============ -->
+<section class="rx-hero" id="rxHome">
+  <div class="rx-wrap">
+    <div class="rx-hero__grid">
+      <div>
+        <div class="rx-hero__badges">
+          <span class="rx-chip rx-chip--hot">官方网站</span>
+          <span class="rx-chip">企业级内容平台</span>
+          <span class="rx-chip">原创正版高清</span>
+          <span class="rx-chip">持续运营 · 第 37 期大赛</span>
+        </div>
+        <h1 class="rx-h1">r星每日必吃大瓜<span>今日大赛</span></h1>
+        <p class="rx-hero__lead">
+          r星每日必吃大瓜今日大赛官方网站，是一个以每日热点影像为入口、以原创内容为核心的视频品牌社区。我们用一档固定的「今日大赛」栏目，记录那些被讨论、被围观、也被认真讲述的日常瞬间——从餐桌到街角，从创作者的工作台到镜头之外的幕后，让每一次围观都留下值得回看的部分。
+        </p>
+        <div class="rx-hero__cta">
+          <a class="rx-btn rx-btn--main" href="#rxWatch">进入焦点影像 →</a>
+          <a class="rx-btn rx-btn--ghost" href="#rxTopic">查看本期专题</a>
+        </div>
+        <div class="rx-stats">
+          <div class="rx-stat"><b data-rx-count="268">0</b><span>期「今日大赛」持续更新</span></div>
+          <div class="rx-stat"><b data-rx-count="14300">0</b><span>位注册创作者与瓜友</span></div>
+          <div class="rx-stat"><b data-rx-count="96">0</b><span>% 内容为原创授权</span></div>
+        </div>
+      </div>
+      <div class="rx-hero__visual">
+        <div class="rx-hero__cover">
+          <img alt="r星每日必吃大瓜今日大赛第37期主视觉：深夜街角与围观人群的影像封面" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 880 620'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2324142e'/%3E%3Cstop offset='.55' stop-color='%2347132f'/%3E%3Cstop offset='1' stop-color='%230f0b17'/%3E%3C/linearGradient%3E%3CradialGradient id='g2' cx='.72' cy='.28' r='.5'%3E%3Cstop offset='0' stop-color='%23ff3b6b' stop-opacity='.82'/%3E%3Cstop offset='1' stop-color='%23ff3b6b' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='880' height='620' fill='url(%23g1)'/%3E%3Crect width='880' height='620' fill='url(%23g2)'/%3E%3Cg stroke='%23ffd23f' stroke-width='2.4' opacity='.75'%3E%3Cpath d='M0 470 L250 380 L470 430 L700 330 L880 372'/%3E%3Cpath d='M0 520 L240 452 L500 496 L720 424 L880 452' opacity='.45'/%3E%3C/g%3E%3Cg fill='%23100c18'%3E%3Crect x='60' y='250' width='110' height='230' rx='6'/%3E%3Crect x='196' y='200' width='86' height='280' rx='6'/%3E%3Crect x='300' y='290' width='130' height='190' rx='6'/%3E%3Crect x='452' y='176' width='98' height='304' rx='6'/%3E%3Crect x='572' y='246' width='140' height='234' rx='6'/%3E%3Crect x='736' y='286' width='104' height='194' rx='6'/%3E%3C/g%3E%3Cg fill='%23ffd23f' opacity='.9'%3E%3Crect x='80' y='282' width='16' height='16'/%3E%3Crect x='110' y='322' width='16' height='16'/%3E%3Crect x='214' y='236' width='14' height='14'/%3E%3Crect x='244' y='290' width='14' height='14'/%3E%3Crect x='326' y='318' width='16' height='16'/%3E%3Crect x='474' y='218' width='16' height='16'/%3E%3Crect x='508' y='276' width='16' height='16'/%3E%3Crect x='600' y='286' width='16' height='16'/%3E%3Crect x='640' y='344' width='16' height='16'/%3E%3Crect x='764' y='318' width='16' height='16'/%3E%3C/g%3E%3Cg fill='%234de2d4' opacity='.85'%3E%3Ccircle cx='330' cy='360' r='5'/%3E%3Ccircle cx='356' cy='392' r='5'/%3E%3Ccircle cx='620' cy='214' r='5'/%3E%3Ccircle cx='790' cy='246' r='5'/%3E%3C/g%3E%3Cg fill='%230b0812' opacity='.92'%3E%3Ccircle cx='220' cy='486' r='30'/%3E%3Crect x='196' y='500' width='48' height='120' rx='18'/%3E%3Ccircle cx='300' cy='502' r='26'/%3E%3Crect x='278' y='514' width='44' height='106' rx='16'/%3E%3Ccircle cx='386' cy='490' r='24'/%3E%3Crect x='366' y='500' width='40' height='120' rx='15'/%3E%3C/g%3E%3Crect x='0' y='530' width='880' height='90' fill='%230d0a14' opacity='.85'/%3E%3Ctext x='44' y='584' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='26' font-weight='bold' fill='%23ffffff'%3E每日必吃大瓜 · 第 37 期 今日大赛%3C/text%3E%3C/svg%3E">
+          <div class="rx-hero__play"><span></span></div>
+        </div>
+        <div class="rx-hero__float">
+          <span class="rx-live-dot"></span>
+          <div><b>今日大赛 · 直播连麦中</b><small>本周热度 82.6 万 · 讨论 3,140 条</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 榜单条 ============ -->
+<div class="rx-wrap">
+  <div class="rx-rank">
+    <span class="rx-rank__title">◆ 每日必吃大瓜 · 热榜</span>
+    <div class="rx-rank__list" id="rxRankList">
+      <a href="#rxWatch"><b>01</b>外卖圈年度反转影像</a>
+      <a href="#rxWatch"><b>02</b>深夜厨房的第三只锅</a>
+      <a href="#rxTopic"><b>03</b>围观者的自我修养</a>
+      <a href="#rxCreator"><b>04</b>瓜田里的镜头语言</a>
+      <a href="#rxWall"><b>05</b>街角三十秒</a>
+      <a href="#rxStory"><b>06</b>一个热搜的十二小时</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 关键词介绍与解析 ============ -->
+<section class="rx-sec rx-about" id="rxAbout">
+  <div class="rx-wrap">
+    <div class="rx-about__grid">
+      <div class="rx-about__side">
+        <div class="rx-kicker">品牌解析</div>
+        <h2 class="rx-h2">关于<em>r星每日必吃大瓜</em><br>与「今日大赛」</h2>
+        <p class="rx-sub">一个把围观做成一门手艺的视频内容社区，由企业与创作者共同持续运营。</p>
+        <div class="rx-about__kpis">
+          <div><b>内容定位</b><span>每日热点影像 · 原创短片 · 深度访谈</span></div>
+          <div><b>栏目结构</b><span>今日大赛 / 必吃大瓜 / 幕后 / 观察室</span></div>
+          <div><b>运营原则</b><span>真实记录、正版授权、用户至上</span></div>
+          <div><b>社区规模</b><span>1.4 万创作者 · 268 期内容沉淀</span></div>
+        </div>
+      </div>
+      <div class="rx-prose">
+        <p>「r星每日必吃大瓜」这个名字，最初只是编辑部内部的一个玩笑：每天总有一些事，让人忍不住想凑近看看。后来它变成了一个固定的栏目名，再后来变成了一家企业持续运营的视频品牌。作为官方网站，我们想做的并不是把所有热闹都堆在一个页面上，而是给每一个「瓜」配上一段完整的影像、一条清楚的时间线，以及一个愿意把话说清楚的人。</p>
+        <p>「今日大赛」是 r星每日必吃大瓜的核心栏目形态。它每天更新一次，用一个相对固定的结构——事件回顾、现场影像、当事视角、观察员短评——把当天最值得看的几件事重新整理一遍。我们不喜欢用夸张的标题去放大事实，也不愿意把复杂的经过压缩成一句结论。所谓的「大赛」，比的不是谁更会起标题，而是谁能在同一天的热闹里，找到更有耐心、更有分寸的表达方式。</p>
+        <h3>为什么叫「每日必吃」</h3>
+        <p>必吃，本来是用在吃上的词。我们把它挪到影像内容里，是想强调一种节奏感：每天都有值得打开一次的东西，但它不该过量。平台每天只主推少量内容，其余交由社区的创作者与用户自己挑选。作为官方网站，我们更愿意承认内容的有限性——一段影像说不完一件事，那就多给几个机位；一件事说不清，那就留到下一期继续。</p>
+        <p>这种克制也体现在品牌调性上。r星每日必吃大瓜的品牌主色是深色底配亮粉与荧光黄，视觉上偏热闹，但排版与文案尽量保持冷静。我们希望用户在刷到一条高热度内容时，能顺手看到它的来源、作者、拍摄时间与授权说明。正版、高清、原创，是平台给创作者的三条底线，也是企业能够长期运营下去的原因。</p>
+        <h3>「今日大赛」到底在比什么</h3>
+        <p>每期今日大赛包含三个方向的评选：一是影像完成度，看一段短片是否在有限时长里把事讲清楚；二是现场感，看创作者有没有真正到达现场，而不是二次搬运；三是表达的善意，看内容是否给当事各方留下基本的体面。这三项由编辑团队与社区观察员共同打分，结果会在企业动态中公示，并进入月度「瓜籽奖」的候选名单。</p>
+        <div class="rx-quote">我们相信，围观不是一件廉价的事。愿意多看一秒、多问一句，才是这个社区最稀缺的能力。</div>
+        <p>对创作者而言，r星每日必吃大瓜是一个可以持续投稿的内容生态：你可以在「今日大赛」投稿板块上传街头纪实、探店观察、幕后花絮、行业访谈；也可以通过创作灵感工具获取脚本结构与剪辑建议。对企业与品牌方而言，这里是一个相对克制的合作场域——我们只接受与内容调性匹配的合作，合作标识会在页面中清楚标注，不做隐藏式植入。</p>
+        <h3>社区与陪伴</h3>
+        <p>平台运行至今，最让我们意外的是评论区。很多用户在点评内容之后，会顺手补上一段自己的经历：某家店的老板、某条街的旧事、某次同样被围观的时刻。这些补充让一段三十秒的影像变成了一个更长的故事。r星每日必吃大瓜把这类内容整理成「故事随笔」栏目，让影像与文字互相补足，也让平台从一个单纯的播放页，慢慢变成一个可以坐下来聊几句的地方。</p>
+        <p>接下来的一年，我们会把重心放在三件事上：其一，继续把「今日大赛」的评选标准透明化，让评选过程本身也可以被观看；其二，加大对原创作者的扶持，包括设备借用、拍摄补贴与联合出品；其三，优化内容分发，让新作者的作品也能被看见。作为一家深耕垂直领域的视频企业，我们不追求数量上的领先，更在意口碑与值得信赖的长期关系。</p>
+        <p>如果你是第一次来到 r星每日必吃大瓜今日大赛官方网站，可以先从焦点影像看起，再挑一个专题慢慢翻。我们不需要你一次看完所有内容，只希望你看完之后，愿意留下一点自己的判断。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 焦点影像 ============ -->
+<section class="rx-sec" id="rxWatch">
+  <div class="rx-wrap">
+    <div class="rx-sec__head">
+      <div>
+        <div class="rx-kicker">焦点影像</div>
+        <h2 class="rx-h2">今日大赛 <em>本期精选</em></h2>
+        <p class="rx-sub">由编辑团队与社区观察员共同推选，每期 6 条，含 2 条主推与 4 条补位。</p>
+      </div>
+      <a class="rx-more" href="#rxTopic">查看往期专题</a>
+    </div>
+
+    <div class="rx-focus">
+      <div class="rx-focus__big">
+        <img alt="焦点影像封面：外卖骑手在凌晨街角与顾客对话的纪实画面" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 960 600'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%230c0a13'/%3E%3Cstop offset='.6' stop-color='%23251a3a'/%3E%3Cstop offset='1' stop-color='%233f1533'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='960' height='600' fill='url(%23f1)'/%3E%3Ccircle cx='730' cy='150' r='96' fill='%23ffd23f' opacity='.22'/%3E%3Ccircle cx='730' cy='150' r='52' fill='%23ffd23f' opacity='.55'/%3E%3Cpath d='M0 430 L190 380 L360 420 L560 350 L760 402 L960 356 L960 600 L0 600Z' fill='%23110d1a'/%3E%3Cg stroke='%23ff3b6b' stroke-width='3' fill='none' opacity='.8'%3E%3Cpath d='M120 250 h150 l30 40 h-150z'/%3E%3Cpath d='M140 290 v60 h110 v-60'/%3E%3C/g%3E%3Cg fill='%234de2d4' opacity='.9'%3E%3Crect x='420' y='210' width='8' height='120' rx='4'/%3E%3Crect x='470' y='176' width='8' height='154' rx='4'/%3E%3Crect x='520' y='234' width='8' height='96' rx='4'/%3E%3C/g%3E%3Cg fill='%23100c18'%3E%3Ccircle cx='300' cy='452' r='22'/%3E%3Crect x='282' y='466' width='36' height='96' rx='14'/%3E%3Ccircle cx='600' cy='464' r='20'/%3E%3Crect x='584' y='476' width='32' height='86' rx='12'/%3E%3C/g%3E%3Ctext x='48' y='90' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='20' font-weight='bold' fill='%23ffd23f'%3E第 37 期 · 今日大赛 主推%3C/text%3E%3C/svg%3E">
+        <div class="rx-focus__txt">
+          <h3>外卖圈年度反转：一段三十秒的街角影像，是怎么被讲清楚的</h3>
+          <p>从一条被误读的短视频，到完整版的现场还原，本期主推用四段不同机位的素材，把一件事的来龙去脉重新捋了一遍。</p>
+          <a class="rx-btn rx-btn--main" href="#rxStory">阅读完整解析</a>
+        </div>
+      </div>
+      <div class="rx-focus__list">
+        <a class="rx-mini" href="#rxStory">
+          <img alt="深夜厨房影像封面：第三只锅里冒着热气的画面" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 260'%3E%3Crect width='420' height='260' fill='%231b1327'/%3E%3Ccircle cx='210' cy='150' r='86' fill='%23ff8a3d' opacity='.18'/%3E%3Crect x='110' y='150' width='200' height='14' rx='7' fill='%23ff3b6b'/%3E%3Cellipse cx='210' cy='128' rx='72' ry='18' fill='%23312a44'/%3E%3Cg stroke='%23ffd23f' stroke-width='5' stroke-linecap='round' opacity='.85'%3E%3Cpath d='M170 96 q14 -22 0 -44'/%3E%3Cpath d='M212 90 q16 -26 0 -50'/%3E%3Cpath d='M252 98 q12 -20 0 -40'/%3E%3C/g%3E%3Ctext x='20' y='40' font-family='PingFang SC,sans-serif' font-size='15' fill='%23a49cb6'%3E必吃 · 深夜灶台%3C/text%3E%3C/svg%3E">
+          <div>
+            <div class="rx-mini__t">深夜厨房的第三只锅：一家小店的凌晨四点半</div>
+            <div class="rx-mini__m">08:42 · 创作者「灶台观察员」 · 12.4 万次播放</div>
+          </div>
+        </a>
+        <a class="rx-mini" href="#rxStory">
+          <img alt="地铁口围观人群影像封面：举着手机的路人与站台灯箱" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 260'%3E%3Crect width='420' height='260' fill='%23131020'/%3E%3Crect x='0' y='180' width='420' height='80' fill='%231d1830'/%3E%3Cg fill='%234de2d4' opacity='.8'%3E%3Crect x='40' y='60' width='60' height='110' rx='8'/%3E%3Crect x='320' y='80' width='54' height='90' rx='8'/%3E%3C/g%3E%3Cg fill='%23100c18'%3E%3Ccircle cx='150' cy='150' r='16'/%3E%3Ccircle cx='230' cy='146' r='18'/%3E%3Ccircle cx='290' cy='156' r='14'/%3E%3C/g%3E%3Cg fill='%23ff3b6b'%3E%3Crect x='144' y='166' width='12' height='46' rx='5'/%3E%3Crect x='222' y='164' width='16' height='50' rx='6'/%3E%3Crect x='285' y='170' width='10' height='44' rx='4'/%3E%3C/g%3E%3C/svg%3E">
+          <div>
+            <div class="rx-mini__t">地铁口的十分钟：围观是本能，也是选择</div>
+            <div class="rx-mini__m">05:18 · 创作者「街角开麦」 · 9.7 万次播放</div>
+          </div>
+        </a>
+        <a class="rx-mini" href="#rxStory">
+          <img alt="创作者工作台影像封面：剪辑软件时间线与键盘" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 260'%3E%3Crect width='420' height='260' fill='%231a1524'/%3E%3Crect x='30' y='40' width='360' height='180' rx='10' fill='%230f0c17' stroke='%232e2740' stroke-width='2'/%3E%3Cg fill='%234de2d4' opacity='.7'%3E%3Crect x='50' y='62' width='180' height='10' rx='5'/%3E%3Crect x='50' y='82' width='120' height='10' rx='5'/%3E%3C/g%3E%3Cg fill='%23ff3b6b'%3E%3Crect x='50' y='130' width='90' height='16' rx='4'/%3E%3Crect x='148' y='130' width='60' height='16' rx='4' opacity='.7'/%3E%3Crect x='216' y='130' width='120' height='16' rx='4' opacity='.45'/%3E%3C/g%3E%3Cg fill='%23ffd23f'%3E%3Crect x='50' y='158' width='140' height='10' rx='5' opacity='.6'/%3E%3Crect x='198' y='158' width='90' height='10' rx='5' opacity='.4'/%3E%3C/g%3E%3C/svg%3E">
+          <div>
+            <div class="rx-mini__t">一条 90 秒的短片，我剪了七版</div>
+            <div class="rx-mini__m">11:06 · 创作者「剪辑师老周」 · 6.2 万次播放</div>
+          </div>
+        </a>
+        <a class="rx-mini" href="#rxStory">
+          <img alt="菜市场人物访谈封面：摊主与镜头前的对话" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 260'%3E%3Crect width='420' height='260' fill='%231c1424'/%3E%3Cg stroke='%23a428d8' stroke-width='3' opacity='.8'%3E%3Cpath d='M0 200 h420'/%3E%3Cpath d='M60 200 v-70 M110 200 v-90 M160 200 v-60'/%3E%3C/g%3E%3Cg fill='%23ff8a3d'%3E%3Ccircle cx='60' cy='118' r='13'/%3E%3Ccircle cx='110' cy='98' r='11'/%3E%3Ccircle cx='160' cy='128' r='12'/%3E%3C/g%3E%3Ccircle cx='300' cy='120' r='34' fill='%23ffd23f' opacity='.3'/%3E%3Ccircle cx='300' cy='120' r='18' fill='%23ffd23f' opacity='.8'/%3E%3Crect x='250' y='164' width='100' height='40' rx='20' fill='%23ff3b6b' opacity='.5'/%3E%3C/svg%3E">
+          <div>
+            <div class="rx-mini__t">菜市场访谈：摊主说他不怕被拍，怕被剪歪</div>
+            <div class="rx-mini__m">14:30 · 创作者「市井录像带」 · 8.1 万次播放</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 热门视频流 ============ -->
+<section class="rx-sec rx-sec--tight" id="rxFeed">
+  <div class="rx-wrap">
+    <div class="rx-sec__head">
+      <div>
+        <div class="rx-kicker">热门视频流</div>
+        <h2 class="rx-h2">瓜友们这两天<em>在看什么</em></h2>
+        <p class="rx-sub">按讨论热度排序，每 6 小时刷新一次。点击卡片内的按钮可以点赞或收藏。</p>
+      </div>
+      <div class="rx-tagcloud" id="rxTagFilter">
+        <button type="button" class="is-on" data-rx-tag="全部">全部</button>
+        <button type="button" data-rx-tag="城市探索">城市探索</button>
+        <button type="button" data-rx-tag="幕后">幕后</button>
+        <button type="button" data-rx-tag="人物访谈">人物访谈</button>
+        <button type="button" data-rx-tag="实用技巧">实用技巧</button>
+      </div>
+    </div>
+
+    <div class="rx-grid3" id="rxFeedGrid">
+      <article class="rx-card" data-rx-tag="城市探索">
+        <div class="rx-thumb">
+          <img alt="城市探索视频封面：蓝调时刻的天台与城市天际线" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='c1' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23132b4a'/%3E%3Cstop offset='1' stop-color='%23334d7a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23c1)'/%3E%3Cg fill='%230d1a2c'%3E%3Crect x='0' y='170' width='90' height='100'/%3E%3Crect x='100' y='140' width='70' height='130'/%3E%3Crect x='180' y='186' width='110' height='84'/%3E%3Crect x='300' y='120' width='80' height='150'/%3E%3Crect x='390' y='166' width='90' height='104'/%3E%3C/g%3E%3Cg fill='%23ffd23f' opacity='.85'%3E%3Crect x='112' y='158' width='8' height='8'/%3E%3Crect x='130' y='180' width='8' height='8'/%3E%3Crect x='314' y='140' width='8' height='8'/%3E%3Crect x='340' y='168' width='8' height='8'/%3E%3Crect x='410' y='186' width='8' height='8'/%3E%3C/g%3E%3Ccircle cx='390' cy='60' r='26' fill='%23ff3b6b' opacity='.7'/%3E%3C/svg%3E">
+          <span class="rx-thumb__tag">城市探索</span>
+          <span class="rx-thumb__time">09:12</span>
+          <div class="rx-thumb__play"><span></span></div>
+        </div>
+        <div class="rx-card__body">
+          <h3 class="rx-card__title">天台之上：我在写字楼顶拍了一整年的城市黄昏</h3>
+          <p class="rx-card__desc">从初夏到深冬，同一个机位拍了 68 次。这条片子记录了城市光线最难被复制的十五分钟。</p>
+          <div class="rx-card__meta"><span class="rx-avatar" style="background:#4de2d4">程</span><span>程野的取景框</span><span>·</span><span>33.8 万播放</span></div>
+          <div class="rx-card__acts">
+            <button class="rx-act" type="button" data-rx-like><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.3-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.7-7 9-7 9z"/></svg><span>2.4k</span></button>
+            <button class="rx-act" type="button" data-rx-fav><svg viewBox="0 0 24 24"><path d="M6 4h12v16l-6-4-6 4z"/></svg><span>收藏</span></button>
+            <button class="rx-act" type="button" data-rx-share>分享</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="rx-card" data-rx-tag="幕后">
+        <div class="rx-thumb">
+          <img alt="幕后视频封面：录音棚里的话筒与调音台" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23130f1c'/%3E%3Cg stroke='%23ff3b6b' stroke-width='2.4' opacity='.7' fill='none'%3E%3Cpath d='M40 220 h400 M40 190 h400 M40 160 h400'/%3E%3C/g%3E%3Crect x='180' y='60' width='46' height='96' rx='23' fill='%23a428d8'/%3E%3Crect x='196' y='156' width='14' height='40' fill='%235b4f7a'/%3E%3Cpath d='M160 196 q40 34 80 0' stroke='%23ffd23f' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3Cg fill='%234de2d4'%3E%3Crect x='300' y='80' width='10' height='80' rx='5'/%3E%3Crect x='322' y='100' width='10' height='60' rx='5'/%3E%3Crect x='344' y='64' width='10' height='96' rx='5'/%3E%3C/g%3E%3C/svg%3E">
+          <span class="rx-thumb__tag">幕后</span>
+          <span class="rx-thumb__time">12:48</span>
+          <div class="rx-thumb__play"><span></span></div>
+        </div>
+        <div class="rx-card__body">
+          <h3 class="rx-card__title">一期「今日大赛」是怎么做出来的：从选题到发布</h3>
+          <p class="rx-card__desc">我们把编辑部的日常拍了下来。选片、核实、联系授权、写旁白，四道关卡一个都不能少。</p>
+          <div class="rx-card__meta"><span class="rx-avatar" style="background:#ffd23f">编</span><span>r星编辑部</span><span>·</span><span>21.5 万播放</span></div>
+          <div class="rx-card__acts">
+            <button class="rx-act" type="button" data-rx-like><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.3-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.7-7 9-7 9z"/></svg><span>1.8k</span></button>
+            <button class="rx-act" type="button" data-rx-fav><svg viewBox="0 0 24 24"><path d="M6 4h12v16l-6-4-6 4z"/></svg><span>收藏</span></button>
+            <button class="rx-act" type="button" data-rx-share>分享</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="rx-card" data-rx-tag="人物访谈">
+        <div class="rx-thumb">
+          <img alt="人物访谈视频封面：两位对坐的人和暖色灯光" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23231a1a'/%3E%3Ccircle cx='240' cy='120' r='110' fill='%23ff8a3d' opacity='.14'/%3E%3Cg fill='%23151016'%3E%3Ccircle cx='160' cy='128' r='26'/%3E%3Crect x='132' y='152' width='56' height='90' rx='24'/%3E%3Ccircle cx='318' cy='122' r='24'/%3E%3Crect x='292' y='144' width='52' height='98' rx='22'/%3E%3C/g%3E%3Crect x='210' y='176' width='60' height='14' rx='7' fill='%23ffd23f'/%3E%3Cg stroke='%23ff3b6b' stroke-width='3' opacity='.7'%3E%3Cpath d='M60 60 h60 M60 60 v60'/%3E%3Cpath d='M420 60 h-60 M420 60 v60'/%3E%3C/g%3E%3C/svg%3E">
+          <span class="rx-thumb__tag">人物访谈</span>
+          <span class="rx-thumb__time">18:24</span>
+          <div class="rx-thumb__play"><span></span></div>
+        </div>
+        <div class="rx-card__body">
+          <h3 class="rx-card__title">专访「市井录像带」：我只拍那些没人举手机的时刻</h3>
+          <p class="rx-card__desc">一位在菜市场拍了四年纪录片的创作者，聊了聊他为什么坚持不带补光灯，也不开美颜。</p>
+          <div class="rx-card__meta"><span class="rx-avatar" style="background:#ff3b6b">访</span><span>大瓜观察室</span><span>·</span><span>17.2 万播放</span></div>
+          <div class="rx-card__acts">
+            <button class="rx-act" type="button" data-rx-like><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.3-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.7-7 9-7 9z"/></svg><span>3.1k</span></button>
+            <button class="rx-act" type="button" data-rx-fav><svg viewBox="0 0 24 24"><path d="M6 4h12v16l-6-4-6 4z"/></svg><span>收藏</span></button>
+            <button class="rx-act" type="button" data-rx-share>分享</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="rx-card" data-rx-tag="实用技巧">
+        <div class="rx-thumb">
+          <img alt="实用技巧视频封面：分镜脚本表格与手写标注" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23141624'/%3E%3Crect x='60' y='40' width='360' height='190' rx='8' fill='%231e2133' stroke='%2332384f' stroke-width='2'/%3E%3Cg stroke='%2332384f' stroke-width='2'%3E%3Cpath d='M60 84 h360 M60 124 h360 M60 164 h360 M60 194 h360 M180 40 v190 M300 40 v190'/%3E%3C/g%3E%3Cg fill='%234de2d4' opacity='.85'%3E%3Crect x='78' y='98' width='80' height='8' rx='4'/%3E%3Crect x='198' y='138' width='80' height='8' rx='4'/%3E%3Crect x='318' y='98' width='80' height='8' rx='4'/%3E%3C/g%3E%3Cg fill='%23ff3b6b' opacity='.85'%3E%3Ccircle cx='110' cy='178' r='9'/%3E%3Ccircle cx='240' cy='58' r='9'/%3E%3Ccircle cx='370' cy='178' r='9'/%3E%3C/g%3E%3C/svg%3E">
+          <span class="rx-thumb__tag">实用技巧</span>
+          <span class="rx-thumb__time">07:36</span>
+          <div class="rx-thumb__play"><span></span></div>
+        </div>
+        <div class="rx-card__body">
+          <h3 class="rx-card__title">三栏分镜法：让你的观察类短片不再像流水账</h3>
+          <p class="rx-card__desc">事件、人物、情绪各占一栏，拍摄前先填满，再决定要不要开机。附可直接下载的模板思路。</p>
+          <div class="rx-card__meta"><span class="rx-avatar" style="background:#4de2d4">课</span><span>大瓜创作课</span><span>·</span><span>12.9 万播放</span></div>
+          <div class="rx-card__acts">
+            <button class="rx-act" type="button" data-rx-like><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.3-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.7-7 9-7 9z"/></svg><span>980</span></button>
+            <button class="rx-act" type="button" data-rx-fav><svg viewBox="0 0 24 24"><path d="M6 4h12v16l-6-4-6 4z"/></svg><span>收藏</span></button>
+            <button class="rx-act" type="button" data-rx-share>分享</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="rx-card" data-rx-tag="城市探索">
+        <div class="rx-thumb">
+          <img alt="城市探索视频封面：雨后小巷与倒影的街灯" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%231a2130'/%3E%3Crect x='0' y='150' width='480' height='120' fill='%23111a26'/%3E%3Cg stroke='%23ffd23f' stroke-width='4' opacity='.9'%3E%3Cpath d='M120 0 v150'/%3E%3Cpath d='M360 0 v150'/%3E%3C/g%3E%3Cg fill='%23ffd23f' opacity='.8'%3E%3Ccircle cx='120' cy='112' r='12'/%3E%3Ccircle cx='360' cy='112' r='12'/%3E%3C/g%3E%3Cg fill='%234de2d4' opacity='.28'%3E%3Crect x='110' y='150' width='20' height='90'/%3E%3Crect x='350' y='150' width='20' height='90'/%3E%3C/g%3E%3Cg fill='%230d131c'%3E%3Crect x='180' y='60' width='120' height='90' rx='4'/%3E%3C/g%3E%3Crect x='196' y='76' width='30' height='30' fill='%23ff3b6b' opacity='.7'/%3E%3C/svg%3E">
+          <span class="rx-thumb__tag">城市探索</span>
+          <span class="rx-thumb__time">10:04</span>
+          <div class="rx-thumb__play"><span></span></div>
+        </div>
+        <div class="rx-card__body">
+          <h3 class="rx-card__title">雨停之后的一条巷子：七点二十三分，路灯刚好亮起</h3>
+          <p class="rx-card__desc">没有旁白，没有配乐，只有脚步和雨滴。这一期的「今日大赛」补位作品，安静得有点犯规。</p>
+          <div class="rx-card__meta"><span class="rx-avatar" style="background:#a428d8">巷</span><span>巷口三十秒</span><span>·</span><span>15.6 万播放</span></div>
+          <div class="rx-card__acts">
+            <button class="rx-act" type="button" data-rx-like><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.3-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.7-7 9-7 9z"/></svg><span>2.7k</span></button>
+            <button class="rx-act" type="button" data-rx-fav><svg viewBox="0 0 24 24"><path d="M6 4h12v16l-6-4-6 4z"/></svg><span>收藏</span></button>
+            <button class="rx-act" type="button" data-rx-share>分享</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="rx-card" data-rx-tag="幕后">
+        <div class="rx-thumb">
+          <img alt="幕后视频封面：手持稳定器与拍摄清单特写" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23171022'/%3E%3Crect x='90' y='50' width='140' height='170' rx='12' fill='%232a2140' stroke='%234a3b68' stroke-width='2'/%3E%3Cg stroke='%23ffd23f' stroke-width='3' opacity='.8'%3E%3Cpath d='M116 90 h88 M116 120 h64 M116 150 h80 M116 180 h48'/%3E%3C/g%3E%3Cg fill='%23ff3b6b'%3E%3Crect x='290' y='70' width='120' height='26' rx='13'/%3E%3Crect x='290' y='114' width='90' height='26' rx='13' opacity='.7'/%3E%3Crect x='290' y='158' width='140' height='26' rx='13' opacity='.45'/%3E%3C/g%3E%3Ccircle cx='380' cy='220' r='20' fill='%234de2d4' opacity='.7'/%3E%3C/svg%3E">
+          <span class="rx-thumb__tag">幕后</span>
+          <span class="rx-thumb__time">13:20</span>
+          <div class="rx-thumb__play"><span></span></div>
+        </div>
+        <div class="rx-card__body">
+          <h3 class="rx-card__title">带一台机器上路：外拍装备清单与踩过的坑</h3>
+          <p class="rx-card__desc">三机位、两块电池、一支定焦。我们把这些年在街头拍片的装备取舍，整理成了一份可复用的清单。</p>
+          <div class="rx-card__meta"><span class="rx-avatar" style="background:#ffd23f">装</span><span>外拍小队</span><span>·</span><span>10.3 万播放</span></div>
+          <div class="rx-card__acts">
+            <button class="rx-act" type="button" data-rx-like><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.3-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.7-7 9-7 9z"/></svg><span>1.2k</span></button>
+            <button class="rx-act" type="button" data-rx-fav><svg viewBox="0 0 24 24"><path d="M6 4h12v16l-6-4-6 4z"/></svg><span>收藏</span></button>
+            <button class="rx-act" type="button" data-rx-share>分享</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 专题企划 ============ -->
+<section class="rx-sec rx-about" id="rxTopic">
+  <div class="rx-wrap">
+    <div class="rx-sec__head">
+      <div>
+        <div class="rx-kicker">专题企划</div>
+        <h2 class="rx-h2">本季四个<em>长期专题</em></h2>
+        <p class="rx-sub">专题由编辑部发起，创作者共同参与。每个专题持续数月，更新状态会在企业动态中同步。</p>
+      </div>
+      <a class="rx-more" href="#rxNews">查看更新日志</a>
+    </div>
+    <div class="rx-topics">
+      <a class="rx-topic" href="#rxStory">
+        <img alt="专题封面：围观人群的剪影与手机屏幕的光" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23201830'/%3E%3Ccircle cx='200' cy='100' r='80' fill='%23ff3b6b' opacity='.2'/%3E%3Cg fill='%230d0916'%3E%3Ccircle cx='110' cy='190' r='22'/%3E%3Crect x='88' y='210' width='44' height='90' rx='18'/%3E%3Ccircle cx='200' cy='176' r='26'/%3E%3Crect x='174' y='200' width='52' height='100' rx='20'/%3E%3Ccircle cx='290' cy='196' r='20'/%3E%3Crect x='270' y='214' width='40' height='86' rx='16'/%3E%3C/g%3E%3Cg fill='%23ffd23f' opacity='.9'%3E%3Crect x='92' y='150' width='10' height='18' rx='3'/%3E%3Crect x='186' y='132' width='10' height='18' rx='3'/%3E%3Crect x='276' y='156' width='10' height='18' rx='3'/%3E%3C/g%3E%3C/svg%3E">
+        <span class="rx-topic__st">更新至第 9 集</span>
+        <h3>围观者的自我修养</h3>
+        <p>记录那些「差一点就转身离开」的现场，讨论围观与介入之间的距离。</p>
+      </a>
+      <a class="rx-topic" href="#rxStory">
+        <img alt="专题封面：灶台火苗与铁锅的近景" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23241a14'/%3E%3Ccircle cx='200' cy='170' r='96' fill='%23ff8a3d' opacity='.22'/%3E%3Cellipse cx='200' cy='190' rx='90' ry='22' fill='%233d2b20'/%3E%3Cpath d='M150 190 q50 -46 100 0' stroke='%23ff3b6b' stroke-width='8' fill='none' stroke-linecap='round'/%3E%3Cg stroke='%23ffd23f' stroke-width='6' fill='none' stroke-linecap='round' opacity='.9'%3E%3Cpath d='M170 130 q16 -30 0 -56'/%3E%3Cpath d='M200 124 q18 -34 0 -62'/%3E%3Cpath d='M230 132 q14 -26 0 -50'/%3E%3C/g%3E%3C/svg%3E">
+        <span class="rx-topic__st">连载中</span>
+        <h3>灶台边的十二小时</h3>
+        <p>跟拍七家小店从备料到收档，看一顿饭背后究竟有多少双手。</p>
+      </a>
+      <a class="rx-topic" href="#rxCreator">
+        <img alt="专题封面：剪辑软件界面与时间线色块" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23141828'/%3E%3Crect x='30' y='50' width='340' height='200' rx='10' fill='%230d1120' stroke='%2328324a' stroke-width='2'/%3E%3Cg fill='%234de2d4' opacity='.8'%3E%3Crect x='50' y='76' width='150' height='10' rx='5'/%3E%3Crect x='50' y='96' width='100' height='10' rx='5'/%3E%3C/g%3E%3Cg fill='%23ff3b6b'%3E%3Crect x='50' y='140' width='90' height='16' rx='4'/%3E%3Crect x='148' y='140' width='70' height='16' rx='4' opacity='.7'/%3E%3Crect x='226' y='140' width='110' height='16' rx='4' opacity='.45'/%3E%3C/g%3E%3Cg fill='%23ffd23f' opacity='.7'%3E%3Crect x='50' y='168' width='130' height='10' rx='5'/%3E%3Crect x='190' y='168' width='80' height='10' rx='5'/%3E%3C/g%3E%3C/svg%3E">
+        <span class="rx-topic__st">每月更新</span>
+        <h3>剪出来的判断</h3>
+        <p>同一个素材交给三位剪辑师，看他们如何用节奏表达各自的立场。</p>
+      </a>
+      <a class="rx-topic" href="#rxWall">
+        <img alt="专题封面：街灯与夜晚街道的长影" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23171c26'/%3E%3Crect x='0' y='210' width='400' height='90' fill='%230f141c'/%3E%3Crect x='186' y='40' width='8' height='170' fill='%2336404f'/%3E%3Ccircle cx='190' cy='48' r='22' fill='%23ffd23f' opacity='.9'/%3E%3Cpath d='M190 70 L150 210 h80z' fill='%23ffd23f' opacity='.16'/%3E%3Cg fill='%23ff3b6b' opacity='.8'%3E%3Ccircle cx='80' cy='150' r='7'/%3E%3Ccircle cx='320' cy='170' r='7'/%3E%3C/g%3E%3C/svg%3E">
+        <span class="rx-topic__st">征集中</span>
+        <h3>街角的第 100 秒</h3>
+        <p>邀请创作者上传一段不超过 100 秒的街头影像，入选作品进入年度影像墙。</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 创作者矩阵 ============ -->
+<section class="rx-sec" id="rxCreator">
+  <div class="rx-wrap">
+    <div class="rx-sec__head">
+      <div>
+        <div class="rx-kicker">创作者矩阵</div>
+        <h2 class="rx-h2">在瓜田里<em>认真拍片的人</em></h2>
+        <p class="rx-sub">点击头像可查看作者档案。平台为注册创作者提供设备借用、剪辑指导与联合出品机会。</p>
+      </div>
+      <a class="rx-more" href="#rxContact">申请入驻</a>
+    </div>
+    <div class="rx-creators" id="rxCreatorGrid">
+      <article class="rx-creator">
+        <button class="rx-creator__av" type="button" data-rx-author="程野" aria-label="查看作者 程野 的档案" style="background:linear-gradient(135deg,#4de2d4,#1f8f88)">程</button>
+        <h3>程野的取景框</h3>
+        <div class="rx-creator__tag">城市探索 · 长镜记录</div>
+        <p>拍了七年城市天台，习惯把三脚架架在别人不愿意爬的地方。作品两次入选今日大赛主推。</p>
+        <div class="rx-creator__nums"><span><b>86</b>作品</span><span><b>2.1万</b>粉丝</span></div>
+      </article>
+      <article class="rx-creator">
+        <button class="rx-creator__av" type="button" data-rx-author="老周" aria-label="查看作者 老周 的档案" style="background:linear-gradient(135deg,#ffd23f,#c98f00)">周</button>
+        <h3>剪辑师老周</h3>
+        <div class="rx-creator__tag">幕后 · 剪辑教学</div>
+        <p>从业十二年的剪辑师，愿意把废片也拿出来讲。专栏「剪出来的判断」作者。</p>
+        <div class="rx-creator__nums"><span><b>54</b>作品</span><span><b>1.6万</b>粉丝</span></div>
+      </article>
+      <article class="rx-creator">
+        <button class="rx-creator__av" type="button" data-rx-author="市井录像带" aria-label="查看作者 市井录像带 的档案" style="background:linear-gradient(135deg,#ff3b6b,#a41f45)">市</button>
+        <h3>市井录像带</h3>
+        <div class="rx-creator__tag">人物访谈 · 街头纪实</div>
+        <p>不带补光灯的拍摄者。坚持在拍摄前先和对方聊十分钟，再决定要不要开机。</p>
+        <div class="rx-creator__nums"><span><b>132</b>作品</span><span><b>3.7万</b>粉丝</span></div>
+      </article>
+      <article class="rx-creator">
+        <button class="rx-creator__av" type="button" data-rx-author="巷口三十秒" aria-label="查看作者 巷口三十秒 的档案" style="background:linear-gradient(135deg,#a428d8,#5c1a7d)">巷</button>
+        <h3>巷口三十秒</h3>
+        <div class="rx-creator__tag">治愈影像 · 无旁白</div>
+        <p>只用环境声讲故事的短片作者。作品时长从不超过三分钟，评论区却常常很长。</p>
+        <div class="rx-creator__nums"><span><b>61</b>作品</span><span><b>1.2万</b>粉丝</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 故事随笔 ============ -->
+<section class="rx-sec rx-sec--tight" id="rxStory">
+  <div class="rx-wrap">
+    <div class="rx-sec__head">
+      <div>
+        <div class="rx-kicker">故事随笔</div>
+        <h2 class="rx-h2">影像之外，<em>还有文字</em></h2>
+        <p class="rx-sub">由编辑与创作者共同撰写的拍摄手记，补充镜头没有说完的部分。</p>
+      </div>
+    </div>
+    <div class="rx-stories">
+      <article class="rx-story">
+        <div class="rx-story__q">“</div>
+        <h3>一个热搜的十二小时</h3>
+        <p>那天下午三点，我们决定跟这条线索。四个人分成两组，一组去现场，一组留在编辑部核实时间线。到晚上九点，我们发现最早流传的那段视频缺少开头七秒——而正是这七秒，改变了整件事的性质。凌晨三点，完整版发布。第二天早上，评论区第一条是当事人家属的留言，只有五个字：谢谢你们了。</p>
+        <div class="rx-story__by">撰文 · r星编辑部 ｜ 阅读 4.2 万</div>
+      </article>
+      <article class="rx-story">
+        <div class="rx-story__q">“</div>
+        <h3>我把镜头对准了沉默的那一方</h3>
+        <p>拍街头纪实最难的，不是机器重，也不是人多。是你举起镜头时，发现所有人都在看同一个方向，而你想转头看另一个方向。那次拍摄，我在人群外站了很久，最后拍到的是一位没举手机的老人。他只是站着，看完了整个过程。回去剪的时候，我把这段放在了片尾。</p>
+        <div class="rx-story__by">撰文 · 市井录像带 ｜ 阅读 3.6 万</div>
+      </article>
+      <article class="rx-story">
+        <div class="rx-story__q">“</div>
+        <h3>第三只锅，是留给夜班的</h3>
+        <p>凌晨四点半，小店已经开了。老板说第一锅给早市，第二锅给熟客，第三锅留给下夜班的人——因为那批人最挑，也最不会投诉。这条片子拍完，我们坐下来吃了一份炒粉。他说你们拍归拍，别把我拍得可怜，我这店开了十九年。这句话我记到现在。</p>
+        <div class="rx-story__by">撰文 · 灶台观察员 ｜ 阅读 5.8 万</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 影像墙 ============ -->
+<section class="rx-sec" id="rxWall">
+  <div class="rx-wrap">
+    <div class="rx-sec__head">
+      <div>
+        <div class="rx-kicker">作品墙</div>
+        <h2 class="rx-h2">社区影像墙 <em>第 37 辑</em></h2>
+        <p class="rx-sub">本期收录 9 张来自社区创作者的画面，均获得作者授权展示。</p>
+      </div>
+      <a class="rx-more" href="#rxContact">上传作品</a>
+    </div>
+    <div class="rx-wall">
+      <figure class="w2 h2">
+        <img alt="影像墙大图：夜市摊位灯火与蒸汽" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 420'%3E%3Crect width='600' height='420' fill='%23271a1a'/%3E%3Ccircle cx='300' cy='200' r='150' fill='%23ff8a3d' opacity='.16'/%3E%3Cg fill='%23120d12'%3E%3Crect x='30' y='230' width='150' height='190' rx='6'/%3E%3Crect x='200' y='260' width='140' height='160' rx='6'/%3E%3Crect x='360' y='220' width='180' height='200' rx='6'/%3E%3C/g%3E%3Cg fill='%23ffd23f' opacity='.85'%3E%3Ccircle cx='105' cy='270' r='12'/%3E%3Ccircle cx='270' cy='296' r='12'/%3E%3Ccircle cx='450' cy='258' r='12'/%3E%3C/g%3E%3Cg stroke='%23ff3b6b' stroke-width='4' opacity='.6'%3E%3Cpath d='M30 230 h540'/%3E%3C/g%3E%3Cg stroke='%23ffffff' stroke-width='3' opacity='.28' stroke-linecap='round'%3E%3Cpath d='M230 170 q20 -40 0 -70'/%3E%3Cpath d='M280 180 q20 -40 0 -70'/%3E%3Cpath d='M330 168 q20 -40 0 -70'/%3E%3C/g%3E%3C/svg%3E">
+        <figcaption>夜市第七摊 · 凌晨两点的蒸汽</figcaption>
+      </figure>
+      <figure>
+        <img alt="影像墙中图：晨光中的公交车窗与乘客侧脸" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 220'%3E%3Crect width='300' height='220' fill='%231b2433'/%3E%3Crect x='20' y='30' width='260' height='150' rx='10' fill='%23233247' stroke='%233b4d68' stroke-width='2'/%3E%3Cg fill='%23ffd23f' opacity='.45'%3E%3Ccircle cx='220' cy='80' r='34'/%3E%3C/g%3E%3Ccircle cx='100' cy='120' r='18' fill='%230e141d'/%3E%3Crect x='82' y='136' width='36' height='44' rx='14' fill='%230e141d'/%3E%3C/svg%3E">
+        <figcaption>早班车 · 第三排靠窗</figcaption>
+      </figure>
+      <figure>
+        <img alt="影像墙中图：手写拍摄清单与笔" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 220'%3E%3Crect width='300' height='220' fill='%23191623'/%3E%3Crect x='50' y='30' width='200' height='160' rx='6' fill='%23efeadc' opacity='.9'/%3E%3Cg stroke='%23888578' stroke-width='3' opacity='.8'%3E%3Cpath d='M76 66 h140 M76 92 h120 M76 118 h140 M76 144 h96'/%3E%3C/g%3E%3Crect x='196' y='150' width='60' height='10' rx='5' transform='rotate(-12 196 150)' fill='%23ff3b6b'/%3E%3C/svg%3E">
+        <figcaption>外拍清单 · 又被划掉三条</figcaption>
+      </figure>
+      <figure class="w2">
+        <img alt="影像墙宽图：雨后地面倒影与行人脚步" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 220'%3E%3Crect width='500' height='220' fill='%23141b24'/%3E%3Cg stroke='%234de2d4' stroke-width='3' opacity='.5'%3E%3Cpath d='M0 140 q120 -30 250 0 t250 0'/%3E%3C/g%3E%3Cg fill='%23ffd23f' opacity='.6'%3E%3Crect x='90' y='60' width='60' height='6' rx='3'/%3E%3Crect x='340' y='72' width='80' height='6' rx='3'/%3E%3C/g%3E%3Cg fill='%23101419'%3E%3Crect x='180' y='96' width='24' height='76' rx='9' transform='rotate(8 192 134)'/%3E%3Crect x='240' y='104' width='22' height='68' rx='8' transform='rotate(-9 251 138)'/%3E%3C/g%3E%3C/svg%3E">
+        <figcaption>雨停之后 · 倒影比人先走一步</figcaption>
+      </figure>
+      <figure>
+        <img alt="影像墙小图：录音波形与耳机特写" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 220'%3E%3Crect width='300' height='220' fill='%23150f24'/%3E%3Cg fill='%23a428d8' opacity='.8'%3E%3Crect x='40' y='90' width='8' height='40' rx='4'/%3E%3Crect x='58' y='72' width='8' height='76' rx='4'/%3E%3Crect x='76' y='100' width='8' height='20' rx='4'/%3E%3Crect x='94' y='60' width='8' height='100' rx='4'/%3E%3Crect x='112' y='86' width='8' height='48' rx='4'/%3E%3Crect x='130' y='70' width='8' height='80' rx='4'/%3E%3C/g%3E%3Ccircle cx='216' cy='110' r='42' fill='none' stroke='%23ffd23f' stroke-width='7' opacity='.85'/%3E%3Ccircle cx='216' cy='110' r='14' fill='%23ffd23f' opacity='.7'/%3E%3C/svg%3E">
+        <figcaption>只留环境声 · 第 14 版混音</figcaption>
+      </figure>
+      <figure>
+        <img alt="影像墙小图：菜市场红色棚布与竹篮" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 220'%3E%3Crect width='300' height='220' fill='%231d1a14'/%3E%3Cpath d='M0 60 h300 v40 H0z' fill='%23ff3b6b' opacity='.75'/%3E%3Cg stroke='%23ffd23f' stroke-width='3' opacity='.7'%3E%3Cpath d='M30 110 v70 M90 110 v70 M150 110 v70 M210 110 v70 M270 110 v70'/%3E%3C/g%3E%3Cg fill='%23c08a4a'%3E%3Cellipse cx='70' cy='176' rx='26' ry='12'/%3E%3Cellipse cx='150' cy='180' rx='26' ry='12'/%3E%3Cellipse cx='230' cy='176' rx='26' ry='12'/%3E%3C/g%3E%3C/svg%3E">
+        <figcaption>菜市场 · 红棚布下的三次成交</figcaption>
+      </figure>
+      <figure>
+        <img alt="影像墙小图：文字起草中的手机备忘录" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 220'%3E%3Crect width='300' height='220' fill='%231a1826'/%3E%3Crect x='90' y='20' width='120' height='180' rx='16' fill='%230e0c17' stroke='%23332e4a' stroke-width='2'/%3E%3Cg fill='%234de2d4' opacity='.8'%3E%3Crect x='108' y='56' width='70' height='8' rx='4'/%3E%3Crect x='108' y='76' width='84' height='8' rx='4'/%3E%3Crect x='108' y='96' width='54' height='8' rx='4'/%3E%3C/g%3E%3Cg fill='%23ff3b6b' opacity='.85'%3E%3Crect x='108' y='130' width='40' height='30' rx='8'/%3E%3C/g%3E%3C/svg%3E">
+        <figcaption>旁白草稿 · 第六次改口吻</figcaption>
+      </figure>
+      <figure>
+        <img alt="影像墙小图：天台围栏与远处的塔吊" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 220'%3E%3Crect width='300' height='220' fill='%23182436'/%3E%3Cg stroke='%2353647d' stroke-width='4'%3E%3Cpath d='M0 170 h300'/%3E%3Cpath d='M40 170 v-50 M120 170 v-50 M200 170 v-50 M280 170 v-50'/%3E%3C/g%3E%3Cg stroke='%23ffd23f' stroke-width='3' opacity='.8'%3E%3Cpath d='M60 60 v100 M60 60 h70 M130 60 v40'/%3E%3C/g%3E%3Ccircle cx='238' cy='58' r='18' fill='%23ff3b6b' opacity='.6'/%3E%3C/svg%3E">
+        <figcaption>同一个机位 · 第 68 次黄昏</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 用户评价 ============ -->
+<section class="rx-sec rx-about" id="rxReview">
+  <div class="rx-wrap">
+    <div class="rx-sec__head">
+      <div>
+        <div class="rx-kicker">用户口碑</div>
+        <h2 class="rx-h2">他们怎么看<em>这个社区</em></h2>
+        <p class="rx-sub">以下评价来自社区用户与参与过今日大赛的创作者，内容经授权整理。</p>
+      </div>
+    </div>
+    <div class="rx-reviews">
+      <div class="rx-review">
+        <div class="rx-review__stars">★★★★★</div>
+        <p>看了三期就注册了。最喜欢的一点是它不急着给结论，会把不同机位的素材都放出来，让我自己判断。</p>
+        <div class="rx-review__user"><span class="rx-avatar" style="background:#4de2d4">林</span><div><b>林一南</b><small>社区用户 · 加入 8 个月</small></div></div>
+      </div>
+      <div class="rx-review">
+        <div class="rx-review__stars">★★★★★</div>
+        <p>作为被拍过一次的店主，我想说谢谢。他们提前来问了能不能拍，也把成片先给我看了。这个细节很打动人。</p>
+        <div class="rx-review__user"><span class="rx-avatar" style="background:#ffd23f">陈</span><div><b>陈记小馆</b><small>内容当事方 · 合作拍摄</small></div></div>
+      </div>
+      <div class="rx-review">
+        <div class="rx-review__stars">★★★★☆</div>
+        <p>剪辑教学那几期是真有用，不是那种讲半天没干货的。就是更新太慢，希望出得更勤一点。</p>
+        <div class="rx-review__user"><span class="rx-avatar" style="background:#ff3b6b">苏</span><div><b>苏同学</b><small>创作者 · 学生导演</small></div></div>
+      </div>
+      <div class="rx-review">
+        <div class="rx-review__stars">★★★★★</div>
+        <p>每天通勤路上刷一次今日大赛，已经成习惯了。内容不算多，但每条都能看完，这点很难得。</p>
+        <div class="rx-review__user"><span class="rx-avatar" style="background:#a428d8">何</span><div><b>何先生</b><small>社区用户 · 加入 1 年 2 个月</small></div></div>
+      </div>
+      <div class="rx-review">
+        <div class="rx-review__stars">★★★★★</div>
+        <p>投稿过一次街拍，编辑给了很具体的修改意见，不是敷衍的「再接再厉」。后来那条上了补位，挺受鼓励的。</p>
+        <div class="rx-review__user"><span class="rx-avatar" style="background:#4de2d4">周</span><div><b>周岸</b><small>创作者 · 街头摄影</small></div></div>
+      </div>
+      <div class="rx-review">
+        <div class="rx-review__stars">★★★★☆</div>
+        <p>希望可以加一个按城市筛选的功能，想看看自己住的那片地方有没有人在拍。其他方面都挺好。</p>
+        <div class="rx-review__user"><span class="rx-avatar" style="background:#ffd23f">吴</span><div><b>吴阿满</b><small>社区用户 · 加入 5 个月</small></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 创作灵感 / 工具 ============ -->
+<section class="rx-sec" id="rxIdea">
+  <div class="rx-wrap">
+    <div class="rx-sec__head">
+      <div>
+        <div class="rx-kicker">创作灵感</div>
+        <h2 class="rx-h2">不知道拍什么？<em>先看看这里</em></h2>
+        <p class="rx-sub">编辑团队整理的选题与结构建议，供投稿创作者参考，不限定风格。</p>
+      </div>
+    </div>
+    <div class="rx-ideas">
+      <div class="rx-panel">
+        <h3>本周选题建议</h3>
+        <p class="rx-panel__sub">从社区讨论中提炼的三个方向，可直接用于今日大赛投稿。</p>
+        <div class="rx-idea-item"><b>01</b><p>一条街的早与晚：同一机位拍两次，剪成对照。<span>建议时长 60～120 秒，环境声优先，旁白可省。</span></p></div>
+        <div class="rx-idea-item"><b>02</b><p>跟一个人走完他的通勤：不问问题，只记录动作。<span>适合观察类创作者，注意提前沟通拍摄边界。</span></p></div>
+        <div class="rx-idea-item"><b>03</b><p>一件旧物的来历：从物品切入讲一段小历史。<span>可与人物访谈结合，成片建议保留现场对话。</span></p></div>
+      </div>
+      <div class="rx-panel">
+        <h3>剪辑思路工具</h3>
+        <p class="rx-panel__sub">选择你正在处理的题材，获取对应的结构提示。</p>
+        <div class="rx-tagcloud" id="rxIdeaTags">
+          <button type="button" data-rx-idea="城市探索">城市探索</button>
+          <button type="button" data-rx-idea="人物访谈">人物访谈</button>
+          <button type="button" data-rx-idea="幕后花絮">幕后花絮</button>
+          <button type="button" data-rx-idea="治愈影像">治愈影像</button>
+        </div>
+        <div class="rx-quote" id="rxIdeaOut" style="margin-top:18px;background:rgba(77,226,212,.08);border-color:rgba(77,226,212,.25);color:#bfeee9;font-size:13px;border-radius:12px;border-style:solid;border-width:1px;padding:14px 16px;">点击上方标签，获取一个可执行的结构建议。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 企业动态 ============ -->
+<section class="rx-sec rx-sec--tight" id="rxNews">
+  <div class="rx-wrap">
+    <div class="rx-sec__head">
+      <div>
+        <div class="rx-kicker">企业动态</div>
+        <h2 class="rx-h2">官方发布<em>与更新日志</em></h2>
+        <p class="rx-sub">平台资讯、评选公示与活动报名，均在此栏目同步。</p>
+      </div>
+      <a class="rx-more" href="#rxContact">媒体联络</a>
+    </div>
+    <div class="rx-news">
+      <div class="rx-news__item">
+        <div class="rx-news__date">2026.11.19</div>
+        <h3>「今日大赛」第 37 期评选结果公示</h3>
+        <p>本期共收到 218 条投稿，入选主推 2 条、补位 4 条。评选依据影像完成度、现场感与表达善意三项，完整评分表可向编辑部索取。</p>
+      </div>
+      <div class="rx-news__item">
+        <div class="rx-news__date">2026.11.12</div>
+        <h3>创作者激励计划第二季开放报名</h3>
+        <p>面向注册满三个月的创作者，提供拍摄补贴、设备借用与联合出品名额。报名入口位于投稿页面，截止日期为 12 月 20 日。</p>
+      </div>
+      <div class="rx-news__item">
+        <div class="rx-news__date">2026.11.05</div>
+        <h3>「吃瓜观察室」直播连麦专场预告</h3>
+        <p>11 月 22 日 20:00，编辑部与三位常驻观察员将就「围观边界」主题连麦讨论，社区用户可在评论区提前留问题。</p>
+      </div>
+      <div class="rx-news__item">
+        <div class="rx-news__date">2026.10.28</div>
+        <h3>内容授权说明更新</h3>
+        <p>平台对二次搬运内容的审核标准做出调整：新增来源标注要求与授权凭证上传入口，进一步保障原创作者权益。</p>
+      </div>
+      <div class="rx-news__item">
+        <div class="rx-news__date">2026.10.15</div>
+        <h3>影像墙第十辑征集启动</h3>
+        <p>本期主题为「街角的第 100 秒」，接受不超过 100 秒的街头影像投稿，入选作品将在官方网站影像墙长期展示。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="rx-sec rx-about" id="rxFaq">
+  <div class="rx-wrap">
+    <div class="rx-sec__head" style="justify-content:center;text-align:center">
+      <div>
+        <div class="rx-kicker" style="justify-content:center">帮助中心</div>
+        <h2 class="rx-h2">关于平台，<em>你可能想问</em></h2>
+      </div>
+    </div>
+    <div class="rx-faq">
+      <details open>
+        <summary>「今日大赛」每期什么时候更新？</summary>
+        <div class="rx-faq__a">每个自然日 20:00 更新主推内容，补位内容视素材核实进度在次日中午前补齐。遇重大事件需要核实时间线时，会顺延发布并在企业动态中说明原因。</div>
+      </details>
+      <details>
+        <summary>投稿有什么具体要求？</summary>
+        <div class="rx-faq__a">接受原创或已获授权的影像作品，题材不限，建议时长 60 秒至 15 分钟。需要提供拍摄时间、地点与主要人物授权说明。平台不接受未经核实的二次搬运内容，也不接受带有明显误导性剪辑的作品。</div>
+      </details>
+      <details>
+        <summary>平台如何保护被拍摄者的权益？</summary>
+        <div class="rx-faq__a">涉及可识别人物的内容，创作者需在投稿时上传沟通记录或授权说明。编辑团队会在发布前进行复核，当事方提出异议时，平台会先行下架并进入复核流程。</div>
+      </details>
+      <details>
+        <summary>创作者激励计划怎么参与？</summary>
+        <div class="rx-faq__a">注册满三个月、且近三个月有至少两条通过审核的原创作品，即可在投稿页面提交申请。入选者将获得拍摄补贴与设备借用额度，并有机会参与平台联合出品项目。</div>
+      </details>
+      <details>
+        <summary>合作与品牌内容如何标注？</summary>
+        <div class="rx-faq__a">所有商业合作内容均会在封面与正文中标注「合作」标识，并在页面底部列出合作方信息。平台不接隐藏式植入，也不接受要求编辑删改事实的合作条件。</div>
+      </details>
+      <details>
+        <summary>可以在平台上分享页面吗？</summary>
+        <div class="rx-faq__a">可以。每张内容卡片与作者档案均提供分享入口，支持复制链接或通过常用社交渠道分享。分享不会改变内容的展示顺序与推荐逻辑。</div>
+      </details>
+      <details>
+        <summary>遇到内容问题如何反馈？</summary>
+        <div class="rx-faq__a">可在「联系与投稿」板块选择反馈通道，说明具体内容与问题类型。平台承诺在三个工作日内给出初步回应，涉及权益争议的会优先处理。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 联系 ============ -->
+<section class="rx-sec" id="rxContact">
+  <div class="rx-wrap">
+    <div class="rx-sec__head">
+      <div>
+        <div class="rx-kicker">联系与投稿</div>
+        <h2 class="rx-h2">把你的画面<em>交给我们</em></h2>
+        <p class="rx-sub">投稿、合作、反馈或加入社区，都可以从这里开始。平台对所有来信保持回应。</p>
+      </div>
+    </div>
+    <div class="rx-contact">
+      <div class="rx-contact__box">
+        <b>内容投稿</b>
+        <p>提交原创短片、街头影像或访谈素材，编辑会在三个工作日内给出反馈意见。</p>
+        <code>submit@rstar-melon.example</code>
+        <div style="margin-top:14px"><button class="rx-btn rx-btn--main" type="button" data-rx-open="submit">打开投稿入口</button></div>
+      </div>
+      <div class="rx-contact__box">
+        <b>品牌合作</b>
+        <p>联合出品、专题共建与内容授权，我们只接受与平台调性匹配的合作方式。</p>
+        <code>partner@rstar-melon.example</code>
+        <div style="margin-top:14px"><button class="rx-btn rx-btn--ghost" type="button" data-rx-open="feedback">发送合作说明</button></div>
+      </div>
+      <div class="rx-contact__box">
+        <b>社区与反馈</b>
+        <p>内容问题、权益异议或功能建议，请尽量写明具体页面与时间，便于我们核查。</p>
+        <code>hello@rstar-melon.example</code>
+        <div style="margin-top:14px"><button class="rx-btn rx-btn--ghost" type="button" data-rx-open="feedback">提交反馈</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ 页脚 ============ -->
+<footer class="rx-footer">
+  <div class="rx-wrap">
+    <div class="rx-footer__grid">
+      <div class="rx-footer__about">
+        <a class="rx-logo" href="#rxHome" aria-label="r星每日必吃大瓜今日大赛官方网站">
+          <span class="rx-logo__mark"><span></span></span>
+          <span class="rx-logo__txt">r星大瓜<small>DAILY MELON</small></span>
+        </a>
+        <p>r星每日必吃大瓜今日大赛官方网站，是由企业持续运营的视频内容社区。我们深耕每日热点影像与原创短片领域，致力于为创作者提供值得信赖的发布平台，为用户提供有分寸、有品质的内容。</p>
+      </div>
+      <div>
+        <h4>内容栏目</h4>
+        <ul>
+          <li><a href="#rxWatch">焦点影像</a></li>
+          <li><a href="#rxTopic">专题企划</a></li>
+          <li><a href="#rxWall">社区影像墙</a></li>
+          <li><a href="#rxStory">故事随笔</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于平台</h4>
+        <ul>
+          <li><a href="#rxAbout">品牌与定位</a></li>
+          <li><a href="#rxCreator">创作者矩阵</a></li>
+          <li><a href="#rxNews">企业动态</a></li>
+          <li><a href="#rxFaq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与方式</h4>
+        <ul>
+          <li><a href="#rxContact">内容投稿</a></li>
+          <li><a href="#rxContact">品牌合作</a></li>
+          <li><a href="#rxIdea">创作灵感</a></li>
+          <li><a href="#rxContact">社区反馈</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rx-footer__bottom">
+      <span>© 2026 r星每日必吃大瓜今日大赛 · 官方网站 · 版权所有</span>
+      <span>企业持续运营中 ｜ 内容均为原创或已获授权 ｜ 备案号：京 ICP 备 2026000000 号</span>
+    </div>
+  </div>
+</footer>
+
+<button class="rx-top" id="rxTop" type="button" aria-label="回到页面顶部">↑</button>
+<div class="rx-toast" id="rxToast" role="status" aria-live="polite"></div>
+
+<div class="rx-modal" id="rxModal" role="dialog" aria-modal="true" aria-labelledby="rxModalTitle">
+  <div class="rx-modal__box">
+    <h3 id="rxModalTitle">投稿入口</h3>
+    <p id="rxModalDesc">请简要描述你的作品题材、时长与拍摄时间。编辑会在三个工作日内回复。</p>
+    <textarea id="rxModalText" placeholder="例如：城市探索类短片，时长 95 秒，2026 年 11 月拍摄于老城区……"></textarea>
+    <div class="rx-modal__acts">
+      <button class="rx-btn rx-btn--ghost" type="button" data-rx-close>取消</button>
+      <button class="rx-btn rx-btn--main" type="button" id="rxModalSend">提交</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* 公告条轮播 */
+  var noticeItems = document.querySelectorAll('.rx-notice__item');
+  var noticeDots = document.querySelectorAll('#rxNoticeDots i');
+  var noticeIdx = 0, noticeTimer = null;
+  function showNotice(i){
+    noticeIdx = (i + noticeItems.length) % noticeItems.length;
+    noticeItems.forEach(function(el, k){ el.classList.toggle('is-on', k === noticeIdx); });
+    noticeDots.forEach(function(el, k){ el.classList.toggle('is-on', k === noticeIdx); });
+  }
+  function startNotice(){
+    clearInterval(noticeTimer);
+    noticeTimer = setInterval(function(){ showNotice(noticeIdx + 1); }, 4600);
+  }
+  if(noticeItems.length){ startNotice(); }
+
+  /* 导航折叠 */
+  var burger = document.getElementById('rxBurger');
+  var nav = document.getElementById('rxNav');
+  if(burger && nav){
+    burger.addEventListener('click', function(){
+      var open = nav.classList.toggle('is-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){
+        nav.classList.remove('is-open');
+        burger.classList.remove('is-open');
+        burger.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* 导航高亮 */
+  var sections = document.querySelectorAll('main section[id]');
+  var navLinks = document.querySelectorAll('#rxNav a');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          navLinks.forEach(function(a){
+            a.classList.toggle('is-active', a.getAttribute('href') === '#' + en.target.id);
+          });
+        }
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    sections.forEach(function(s){ io.observe(s); });
+  }
+
+  /* Toast */
+  var toast = document.getElementById('rxToast');
+  var toastTimer = null;
+  function showToast(msg){
+    if(!toast) return;
+    toast.textContent = msg;
+    toast.classList.add('is-on');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('is-on'); }, 2200);
+  }
+
+  /* 点赞 / 收藏 / 分享 */
+  document.addEventListener('click', function(e){
+    var likeBtn = e.target.closest('[data-rx-like]');
+    if(likeBtn){
+      var span = likeBtn.querySelector('span');
+      var on = likeBtn.classList.toggle('is-on');
+      var num = parseFloat((span.textContent || '0').replace(/[^\d.]/g,'')) || 0;
+      var unit = /k/i.test(span.textContent) ? 'k' : '';
+      num = Math.max(0, num + (on ? 1 : -1));
+      span.textContent = num + (unit ? 'k' : '') ;
+      if(unit){ span.textContent = num.toFixed(1).replace(/\.0$/,'') + 'k'; }
+      showToast(on ? '已点赞，感谢你的支持' : '已取消点赞');
+      return;
+    }
+    var favBtn = e.target.closest('[data-rx-fav]');
+    if(favBtn){
+      var onf = favBtn.classList.toggle('is-on');
+      var t = favBtn.querySelector('span');
+      if(t) t.textContent = onf ? '已收藏' : '收藏';
+      showToast(onf ? '已加入我的收藏' : '已取消收藏');
+      return;
+    }
+    var shareBtn = e.target.closest('[data-rx-share]');
+    if(shareBtn){
+      var url = 'https://rstar-melon.example/daily';
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(url).then(function(){
+          showToast('链接已复制，可分享给朋友');
+        }).catch(function(){
+          showToast('分享链接：' + url);
+        });
+      } else {
+        showToast('分享链接：' + url);
+      }
+      return;
+    }
+    var authorBtn = e.target.closest('[data-rx-author]');
+    if(authorBtn){
+      var name = authorBtn.getAttribute('data-rx-author');
+      showToast('正在打开「' + name + '」的作者档案');
+      return;
+    }
+  });
+
+  /* 搜索反馈 */
+  var searchInput = document.getElementById('rxSearchInput');
+  var searchBtn = document.getElementById('rxSearchBtn');
+  function doSearch(){
+    var q = (searchInput && searchInput.value || '').trim();
+    if(!q){ showToast('请输入关键词，例如「天台」「访谈」「幕后」'); return; }
+    var pool = ['城市探索','幕后','人物访谈','实用技巧','治愈影像','街角'];
+    var hit = pool.some(function(k){ return q.indexOf(k) > -1 || k.indexOf(q) > -1; });
+    showToast(hit ? '已为你筛选「' + q + '」相关内容' : '暂无完全匹配，已按热度为你推荐相近内容');
+  }
+  if(searchBtn) searchBtn.addEventListener('click', doSearch);
+  if(searchInput) searchInput.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ e.preventDefault(); doSearch(); }
+  });
+
+  /* 标签筛选 */
+  var tagFilter = document.getElementById('rxTagFilter');
+  if(tagFilter){
+    tagFilter.addEventListener('click', function(e){
+      var btn = e.target.closest('button[data-rx-tag]');
+      if(!btn) return;
+      var tag = btn.getAttribute('data-rx-tag');
+      tagFilter.querySelectorAll('button').forEach(function(b){ b.classList.toggle('is-on', b === btn); });
+      var cards = document.querySelectorAll('#rxFeedGrid .rx-card');
+      var count = 0;
+      cards.forEach(function(c){
+        var ok = tag === '全部' || c.getAttribute('data-rx-tag') === tag;
+        c.style.display = ok ? '' : 'none';
+        if(ok) count++;
+      });
+      showToast(tag === '全部' ? '已显示全部 6 条内容' : '「' + tag + '」共 ' + count + ' 条内容');
+    });
+  }
+
+  /* 创作灵感提示 */
+  var ideaTags = document.getElementById('rxIdeaTags');
+  var ideaOut = document.getElementById('rxIdeaOut');
+  var ideaMap = {
+    '城市探索': '结构建议：开场给一个不解释的空镜（5 秒），中段用三次行走作为节拍，结尾回到开场机位。旁白只写三句，其余交给环境声。',
+    '人物访谈': '结构建议：先出现手部动作，再出现脸部。提问不超过五个，问题之间留三秒空白。把受访者最放松的那句话放在片头做引子。',
+    '幕后花絮': '结构建议：用「失败的三次」开场，再展示最终版本。中间插入一条真实的工作对话，不剪掉停顿与笑声，可信度会更高。',
+    '治愈影像': '结构建议：不设旁白，只用一个声音线索贯穿全片（雨、脚步或风扇）。结尾保留两秒黑屏，让观众自己停下来。'
+  };
+  if(ideaTags && ideaOut){
+    ideaTags.addEventListener('click', function(e){
+      var btn = e.target.closest('button[data-rx-idea]');
+      if(!btn) return;
+      var key = btn.getAttribute('data-rx-idea');
+      ideaTags.querySelectorAll('button').forEach(function(b){ b.classList.toggle('is-on', b === btn); });
+      ideaOut.textContent = ideaMap[key] || '暂时没有该题材的建议。';
+      showToast('已生成「' + key + '」结构建议');
+    });
+  }
+
+  /* 数字滚动 */
+  var counters = document.querySelectorAll('[data-rx-count]');
+  function animateCount(el){
+    var target = parseInt(el.getAttribute('data-rx-count'), 10) || 0;
+    var start = performance.now();
+    var dur = 1200;
+    function step(now){
+      var p = Math.min(1, (now - start) / dur);
+      var eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(target * eased).toLocaleString('zh-CN');
+      if(p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  if('IntersectionObserver' in window){
+    var co = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          animateCount(en.target);
+          co.unobserve(en.target);
+        }
+      });
+    }, { threshold: .4 });
+    counters.forEach(function(c){ co.observe(c); });
+  } else {
+    counters.forEach(function(c){ c.textContent = c.getAttribute('data-rx-count'); });
+  }
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById('rxTop');
+  window.addEventListener('scroll', function(){
+    if(!topBtn) return;
+    topBtn.classList.toggle('is-on', window.scrollY > 560);
+  }, { passive: true });
+  if(topBtn){
+    topBtn.addEventListener('click', function(){
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  /* 弹窗 */
+  var modal = document.getElementById('rxModal');
+  var modalTitle = document.getElementById('rxModalTitle');
+  var modalDesc = document.getElementById('rxModalDesc');
+  var modalText = document.getElementById('rxModalText');
+  var modalSend = document.getElementById('rxModalSend');
+  var modalType = 'submit';
+  function openModal(type){
+    modalType = type || 'submit';
+    if(modalType === 'submit'){
+      modalTitle.textContent = '投稿入口';
+      modalDesc.textContent = '请简要描述你的作品题材、时长与拍摄时间。编辑会在三个工作日内回复。';
+    } else {
+      modalTitle.textContent = '反馈与合作说明';
+      modalDesc.textContent = '请写明具体页面、问题类型或合作方向，我们会尽快核查并与你联系。';
+    }
+    if(modalText) modalText.value = '';
+    if(modal) modal.classList.add('is-on');
+    setTimeout(function(){ if(modalText) modalText.focus(); }, 220);
+  }
+  function closeModal(){
+    if(modal) modal.classList.remove('is-on');
+  }
+  document.addEventListener('click', function(e){
+    var openBtn = e.target.closest('[data-rx-open]');
+    if(openBtn){
+      openModal(openBtn.getAttribute('data-rx-open'));
+      return;
+    }
+    if(e.target.closest('[data-rx-close]') || e.target === modal){
+      closeModal();
+    }
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && modal && modal.classList.contains('is-on')) closeModal();
+  });
+  if(modalSend){
+    modalSend.addEventListener('click', function(){
+      var val = (modalText && modalText.value || '').trim();
+      if(val.length < 8){
+        showToast('内容太短了，再多写几句吧');
+        return;
+      }
+      closeModal();
+      showToast(modalType === 'submit' ? '投稿已提交，编辑会在三个工作日内回复' : '已收到你的反馈，感谢来信');
+    });
+  }
+
+  /* 平滑锚点偏移补偿 */
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a[href^="#"]');
+    if(!a) return;
+    var id = a.getAttribute('href');
+    if(id === '#' || id.length < 2) return;
+    var target = document.querySelector(id);
+    if(!target) return;
+    e.preventDefault();
+    var head = document.querySelector('.rx-sticky');
+    var offset = head ? head.getBoundingClientRect().height : 0;
+    var y = target.getBoundingClientRect().top + window.scrollY - offset - 12;
+    window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
+    history.replaceState(null, '', id);
+  });
+})();
+</script>
+</body>
+          </html>
